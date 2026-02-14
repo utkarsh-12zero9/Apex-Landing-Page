@@ -62,7 +62,7 @@ export default function Faculty() {
                 </h2>
                 <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {faculty.map((person) => (
-                        <article key={person.name} className="faculty-card bg-card rounded-2xl overflow-hidden border border-primary/20 shadow-sm hover:shadow-md transition-shadow h-[500px]">
+                        <article key={person.name} className="faculty-card bg-card rounded-2xl overflow-hidden border border-primary/20 shadow-sm hover:shadow-md transition-shadow h-125">
                             <img src={person.image} alt={person.name} className="h-[60%] w-full object-cover object-top transition-all duration-300" loading="lazy" />
                             <div className="p-5 h-[40%] overflow-hidden">
                                 <h3 className="text-lg font-semibold text-foreground">{person.name}</h3>
@@ -99,8 +99,8 @@ export default function Faculty() {
                                 </a>
                             ))}
                         </div>
-                        <div className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-primary/5 to-transparent z-10"></div>
-                        <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-primary/5 to-transparent z-10"></div>
+                        <div className="absolute top-0 left-0 w-24 h-full bg-linear-to-r from-primary/5 to-transparent z-10"></div>
+                        <div className="absolute top-0 right-0 w-24 h-full bg-linear-to-l from-primary/5 to-transparent z-10"></div>
                     </div>
                 </div>
             </div>
