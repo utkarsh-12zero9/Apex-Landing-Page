@@ -33,7 +33,7 @@ export default function AIToolsSection() {
                                 {[...ALL_TOOLS, ...ALL_TOOLS].map((tool, idx) => (
                                     <div
                                         key={`${tool.name}-${idx}`}
-                                        className="bg-card border border-primary rounded-xl px-4 py-3 flex items-center gap-4 min-w-[200px] hover:border-primary/50 transition-colors mr-6"
+                                        className="bg-card border border-primary rounded-xl px-3 py-2 md:px-4 md:py-3 flex items-center gap-4 min-w-40 md:min-w-50 hover:border-primary/50 transition-colors mr-6"
                                     >
                                         <Image src={tool.logo} alt={tool.name} width={32} height={32} className="object-contain opacity-80" />
                                         <span className="text-foreground text-sm font-bold">{tool.name}</span>

@@ -9,6 +9,7 @@ import FAQ from '../components/FAQ'
 import FinalCTA from '../components/FinalCTA'
 import CourseBrief from '@/components/CourseBrief'
 import Footer from '@/components/Footer'
+import WhyApex from '@/components/WhyApex'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <CourseBrief />
         <Modules />
         <Tools />
+        <WhyApex />
         <Faculty />
         <SocialProof />
         <FAQ />

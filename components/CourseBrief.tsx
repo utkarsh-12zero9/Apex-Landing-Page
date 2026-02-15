@@ -86,7 +86,7 @@ export default function CourseBrief() {
   };
 
   return (
-    <section className="bg-background py-10 px-4 sm:px-6 lg:px-8">
+    <section className="bg-slate-50/80 py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl overflow-hidden">
           {/* Left Section - Carousel Slideshow */}
@@ -171,13 +171,15 @@ export default function CourseBrief() {
             </div>
 
             {/* Apply Button */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-2">
               <a
                 href={applyLink}
-                className="bg-primary text-white font-bold text-sm lg:text-base px-8 py-3 rounded-full transition-all duration-300 flex items-center gap-2 w-fit hover:brightness-110 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 group"
+                className="bg-primary text-white font-bold text-sm lg:text-base pl-8 pr-4 py-3 rounded-full transition-all duration-300 flex items-center gap-4 w-fit hover:brightness-110 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 group"
               >
-                GET STARTED
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                KNOW MORE
+                <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
+                  <ArrowRight className="w-3.5 h-3.5 text-primary transition-transform duration-300 group-hover:translate-x-0.5" />
+                </div>
               </a>
             </div>
           </div>

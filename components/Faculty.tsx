@@ -60,10 +60,10 @@ export default function Faculty() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground text-center">
                     Our Faculties from <span className="text-primary">IIT, ISB, ICAI</span>
                 </h2>
-                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                     {faculty.map((person) => (
-                        <article key={person.name} className="faculty-card bg-card rounded-2xl overflow-hidden border border-primary/20 shadow-sm hover:shadow-md transition-shadow h-125">
-                            <img src={person.image} alt={person.name} className="h-[60%] w-full object-cover object-top transition-all duration-300" loading="lazy" />
+                        <article key={person.name} className="faculty-card bg-card rounded-2xl overflow-hidden border border-primary/20 shadow-sm hover:shadow-lg hover:scale-102 transition-shadow h-125 lg:h-150">
+                            <img src={person.image} alt={person.name} className="h-[55%] lg:h-[65%] w-full object-cover object-top transition-all duration-300" loading="lazy" />
                             <div className="p-5 h-[40%] overflow-hidden">
                                 <h3 className="text-lg font-semibold text-foreground">{person.name}</h3>
                                 <p className="mt-2 text-sm text-muted">{person.credential}</p>

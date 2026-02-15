@@ -1,10 +1,11 @@
 "use client";
 
 import FadeInSection from './FadeInSection'
+import SparkleButton from './SparkleButton'
 
 export default function Hero() {
     return (
-        <FadeInSection id="hero" className="relative overflow-hidden px-4 pb-8 pt-32 sm:px-6 lg:px-8 lg:pt-40">
+        <FadeInSection id="hero" className="relative overflow-hidden px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-40">
             <div className="pointer-events-none absolute inset-0 -z-10">
                 <div className="mx-auto h-96 w-96 rounded-full bg-primary/20 blur-[130px]" />
             </div>
@@ -21,19 +22,19 @@ export default function Hero() {
                         <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
                             Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional.
                         </p>
-                        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                            <a
+                        <div className="mt-8 flex flex-col min-[360px]:flex-row gap-2">
+                            <SparkleButton
                                 href="#final-cta"
-                                className="rounded-2xl bg-primary px-7 py-3 text-center font-semibold text-white shadow-md hover:shadow-lg transform transition duration-200 ease-out hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary/30 active:translate-y-1"
+                                className="rounded-2xl bg-primary px-7 py-3 text-center font-semibold text-white shadow-md hover:shadow-lg transform transition duration-200 ease-out hover:scale-102 focus:outline-none focus:ring-4 focus:ring-primary/30 active:translate-y-1"
                             >
                                 Enroll Now
-                            </a>
-                            <a
+                            </SparkleButton>
+                            <SparkleButton
                                 href="#modules"
-                                className="rounded-2xl border border-black bg-background/0 px-7 py-3 text-center font-semibold text-foreground transition duration-200 ease-out hover:bg-primary/5 hover:border-primary/30 focus:outline-none focus:ring-2 focus:ring-black active:translate-y-1"
+                                className="rounded-2xl border border-black bg-background/0 px-7 py-3 text-center font-semibold text-foreground transition duration-200 ease-out hover:bg-primary/5 hover:border-primary/30 hover:scale-102 focus:outline-none focus:ring-2 focus:ring-black active:translate-y-1"
                             >
                                 View Curriculum
-                            </a>
+                            </SparkleButton>
                         </div>
                     </div>
 

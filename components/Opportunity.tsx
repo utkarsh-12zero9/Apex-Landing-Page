@@ -61,7 +61,7 @@ export default function Opportunity() {
     ];
 
     return (
-        <section className="bg-background py-10 px-6 overflow-hidden">
+        <section className="bg-slate-50/80 py-10 px-6 overflow-hidden">
             <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
 
                 {/* Animated Heading Section */}

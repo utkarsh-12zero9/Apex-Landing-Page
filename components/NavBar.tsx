@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const links = [
     { name: 'Curriculum', href: '#modules' },
+    { name: 'About Us', href: '#apex' },
     { name: 'Faculty', href: '#faculty' },
     { name: 'FAQ', href: '#faq' },
 ]
@@ -29,8 +30,8 @@ export default function NavBar() {
                     transition-all duration-500 ease-in-out
                     border border-white/20
                     ${scrolled
-                        ? 'bg-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.08)] border-white/30'
-                        : 'bg-white/50 shadow-[0_4px_16px_rgba(0,0,0,0.04)]'
+                        ? 'bg-white/90 shadow-[0_8px_32px_rgba(0,0,0,0.08)] border-white/30'
+                        : 'bg-white/80 shadow-[0_4px_16px_rgba(0,0,0,0.04)]'
                     }
                 `}
                 style={{ backdropFilter: 'blur(20px) saturate(1.5)', WebkitBackdropFilter: 'blur(20px) saturate(1.5)' }}

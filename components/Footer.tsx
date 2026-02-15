@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Instagram, Twitter, Mail, ArrowUpRight } from 'lucide-react';
+import { Linkedin, Instagram, Twitter, Mail, ArrowUpRight, Phone, MapPin } from 'lucide-react';
 
 const quickLinks = [
     { name: 'Curriculum', href: '#modules' },
@@ -9,15 +9,8 @@ const quickLinks = [
     { name: 'FAQ', href: '#faq' },
 ];
 
-const programLinks = [
-    { name: 'AI-Driven Business Career', href: '#hero' },
-    { name: 'Course Modules', href: '#modules' },
-    { name: 'Tools You Master', href: '#modules' },
-    { name: 'Enroll Now', href: '#final-cta' },
-];
-
 const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/shashikantburnwal-careers/' },
     { name: 'Instagram', icon: Instagram, href: '#' },
     { name: 'Twitter', icon: Twitter, href: '#' },
     { name: 'Email', icon: Mail, href: 'mailto:contact@apexschool.com' },
@@ -81,27 +74,7 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Program */}
-                    <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
-                            Program
-                        </h3>
-                        <ul className="space-y-3">
-                            {programLinks.map((link) => (
-                                <li key={link.name}>
-                                    <a
-                                        href={link.href}
-                                        className="text-sm text-white/60 hover:text-primary transition-colors duration-200 flex items-center gap-1 group"
-                                    >
-                                        {link.name}
-                                        <ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200" />
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Contact / CTA */}
+                    {/* Get Started */}
                     <div>
                         <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
                             Get Started
@@ -117,13 +90,44 @@ export default function Footer() {
                             <ArrowUpRight className="w-4 h-4" />
                         </a>
                     </div>
+
+                    {/* Contact */}
+                    <div>
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
+                            Contact
+                        </h3>
+                        <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                                <Phone className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                                <div>
+                                    <p className="text-sm font-medium text-white/80">Phone</p>
+                                    <a href="tel:+918049765241" className="text-sm text-white/60 hover:text-primary transition-colors">+91 8049765241</a>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                                <div>
+                                    <p className="text-sm font-medium text-white/80">Email</p>
+                                    <a href="mailto:support@salesacademy.com" className="text-sm text-white/60 hover:text-primary transition-colors">support@salesacademy.com</a>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                                <div>
+                                    <p className="text-sm font-medium text-white/80">Address</p>
+                                    <p className="text-sm text-white/60 leading-relaxed">Rainmakers Workspace, J.P Nagar, 3rd Phase, Bangalore, Karnataka India 560078</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Divider */}
                 <div className="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <p className="text-xs text-white/40">
-                        © {new Date().getFullYear()} Apex School of Business. All rights reserved.
-                    </p>
+                    <div className="flex flex-col gap-1">
+                        <p className="text-xs text-white/50">© 2026 SalesAI Academy</p>
+                        <p className="text-xs text-white/40">Owned by Hubcredo Solutions Private Limited</p>
+                    </div>
                     <div className="flex items-center gap-6">
                         <a href="#" className="text-xs text-white/40 hover:text-white/70 transition-colors">Privacy Policy</a>
                         <a href="#" className="text-xs text-white/40 hover:text-white/70 transition-colors">Terms of Service</a>
