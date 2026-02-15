@@ -11,6 +11,7 @@ import {
     BriefcaseBusiness,
     Rocket,
 } from 'lucide-react'
+import { useState } from 'react'
 import FadeInSection from './FadeInSection'
 
 const modules = [
@@ -140,6 +141,8 @@ const TAG_COLORS = [
 ];
 
 export default function Modules() {
+    const [isExpanded, setIsExpanded] = useState(false);
+
     return (
         <FadeInSection id="modules" className="scroll-mt-18 px-4 py-10 sm:px-6 lg:px-8" delay={0.15}>
             <div className="mx-auto max-w-5xl">
@@ -154,10 +157,11 @@ export default function Modules() {
 
                 <div className="space-y-8 bg-primary/10 p-8 rounded-xl">
                     {modulesNew.map((item, index) => {
+                        const isHiddenOnMobile = !isExpanded && index >= 3;
                         return (
                             <div
                                 key={index}
-                                className="bg-white w-full rounded-xl px-8 py-6 border border-primary/10 shadow-sm hover:border-primary/30 transition-all hover:shadow-md"
+                                className={`bg-white w-full rounded-xl px-8 py-6 border border-primary/10 shadow-sm hover:border-primary/30 transition-all hover:shadow-md ${isHiddenOnMobile ? 'hidden min-[480px]:block' : ''}`}
                             >
                                 <div className="mb-2">
                                     <span className="text-sm font-black uppercase tracking-widest text-primary/80 ">
@@ -190,6 +194,16 @@ export default function Modules() {
                             </div>
                         );
                     })}
+                    {!isExpanded && (
+                        <div className="flex justify-center mt-6 min-[760px]:hidden">
+                            <button
+                                onClick={() => setIsExpanded(true)}
+                                className="px-6 py-2 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors shadow-sm cursor-pointer"
+                            >
+                                SEE MORE
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         </FadeInSection>
