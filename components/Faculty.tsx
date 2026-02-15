@@ -55,7 +55,7 @@ const featuredIn = [
 
 export default function Faculty() {
     return (
-        <FadeInSection id="faculty" className="px-4 font-sans py-10 sm:px-6 lg:px-8" delay={0.25}>
+        <FadeInSection id="faculty" className="scroll-mt-18 px-4 font-sans py-10 sm:px-6 lg:px-8" delay={0.25}>
             <div className="mx-auto max-w-7xl">
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground text-center">
                     Our Faculties from <span className="text-primary">IIT, ISB, ICAI</span>

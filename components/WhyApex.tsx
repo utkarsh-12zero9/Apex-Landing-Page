@@ -47,7 +47,7 @@ const features = [
 
 export default function WhyApex() {
     return (
-        <section id="apex" className="bg-slate-50/80 py-16 px-4 sm:px-6 lg:px-8">
+        <section id="apex" className="scroll-mt-18 bg-slate-50/80 py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">
                     Why <span className="text-primary">Apex?</span>

@@ -47,7 +47,7 @@ export default function FAQ() {
     const [openIndex, setOpenIndex] = useState(0)
 
     return (
-        <section id="faq" className="bg-background py-10 px-4 sm:px-6 lg:px-8">
+        <section id="faq" className="scroll-mt-18 bg-background py-10 px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
                 <h2 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl mb-12 text-center">
                     Frequently Asked Questions

@@ -141,7 +141,7 @@ const TAG_COLORS = [
 
 export default function Modules() {
     return (
-        <FadeInSection id="modules" className="px-4 py-10 sm:px-6 lg:px-8" delay={0.15}>
+        <FadeInSection id="modules" className="scroll-mt-18 px-4 py-10 sm:px-6 lg:px-8" delay={0.15}>
             <div className="mx-auto max-w-5xl">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
