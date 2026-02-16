@@ -17,7 +17,7 @@ export default function Hero() {
                             Future-Proof Your Career
                         </p>
                         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #000000 0%, #10b981 30%, #3b82f6 60%, #8b5cf6 100%)' }}>
-                            Launch Your Career in the AI-Driven Business World.
+                            Launch Your Career in the AI-Driven World in just 21 .
                         </h1>
                         <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
                             Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional.

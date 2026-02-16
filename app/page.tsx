@@ -10,6 +10,9 @@ import FinalCTA from '../components/FinalCTA'
 import CourseBrief from '@/components/CourseBrief'
 import Footer from '@/components/Footer'
 import WhyApex from '@/components/WhyApex'
+import AfterProgram from '@/components/AfterProgram'
+import HiringPartners from '@/components/HiringPartners'
+import Journey from '@/components/Journey'
 
 export default function Home() {
   return (
@@ -21,6 +24,9 @@ export default function Home() {
         <CourseBrief />
         <Modules />
         <Tools />
+        <Journey />
+        <AfterProgram />
+        <HiringPartners />
         <WhyApex />
         <Faculty />
         <SocialProof />
