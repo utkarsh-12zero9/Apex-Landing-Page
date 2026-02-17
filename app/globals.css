@@ -51,7 +51,27 @@ body {
   animation: marquee 80s linear infinite;
 }
 
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 80s linear infinite;
+}
+
 .group:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+.group:hover .animate-marquee-reverse {
   animation-play-state: paused;
 }
 

@@ -14,10 +14,10 @@ export default function Hero() {
                     {/* Left Content - 60% width */}
                     <div className="w-full lg:w-3/5">
                         <p className="mb-4 inline-flex rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-medium text-primary">
-                            Future-Proof Your Career
+                            India’s First Execution Focused Business School
                         </p>
                         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
-                            Boost Your Career with <span className="text-violet-600">AI</span><br /> in <span className="text-violet-600">just 21 Days</span>.
+                            Launch Your Career in the <span className="text-violet-600">AI-Driven</span> World in <span className="text-violet-600">just 21 Days</span>.
                         </h1>
                         <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
                             Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional.

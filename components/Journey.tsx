@@ -93,7 +93,7 @@ export default function Journey() {
     const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
     return (
-        <section ref={containerRef} className="py-10 px-4 sm:px-6 lg:px-8 bg-background relative overflow-hidden" id="journey">
+        <section ref={containerRef} className="py-10 px-4 sm:px-6 lg:px-8 bg-gray-100 relative overflow-hidden" id="journey">
             <div className="max-w-6xl mx-auto relative z-10">
                 <div className="text-center mb-20">
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">

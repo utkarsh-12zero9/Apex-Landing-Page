@@ -39,14 +39,14 @@ export default function Opportunity() {
     const stats = [
         {
             icon: <Users />,
-            value: "40,000",
+            value: "80,000",
             suffix: " +",
             label: "Business Careers Jobs every month",
             color: "bg-primary/10"
         },
         {
             icon: <User />,
-            value: "8 LPA",
+            value: "4 – 6 LPA",
             prefix: "₹",
             suffix: " LPA",
             label: "Average Salary at Entry Level",
@@ -55,7 +55,7 @@ export default function Opportunity() {
         {
             icon: <IndianRupee />,
             value: "₹15 – 40 LPA",
-            label: "Average Salary at Mid level",
+            label: "After 5+ years of Experience",
             color: "bg-primary/10"
         }
     ];

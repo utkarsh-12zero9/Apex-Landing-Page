@@ -15,7 +15,7 @@ export default function AfterProgram() {
     ];
 
     return (
-        <FadeInSection className="py-10 px-4 sm:px-6 lg:px-8 bg-card relative overflow-hidden">
+        <FadeInSection className="py-10 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-6">

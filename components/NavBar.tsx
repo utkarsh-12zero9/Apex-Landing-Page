@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const links = [
     { name: 'Curriculum', href: '#modules' },
-    { name: 'About Us', href: '#apex' },
+    { name: 'About', href: '#apex' },
     { name: 'Faculty', href: '#faculty' },
     { name: 'FAQ', href: '#faq' },
 ]
@@ -38,17 +39,10 @@ export default function NavBar() {
             >
                 {/* Logo - left */}
                 <a href="#hero" className="flex items-center gap-3 group">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
-                        <span className="text-sm font-extrabold text-white">AI</span>
+                    <div className="flex relative h-12 w-[180px] items-center justify-start transition-all duration-300 group-hover:scale-105">
+                        <Image src="/logo.png" alt="Apex Logo" fill className="object-contain object-left" />
                     </div>
-                    <div className="hidden sm:block">
-                        <div className="text-sm font-bold text-foreground">Apex </div>
-                        <div className="text-[11px] text-muted">School of Business</div>
-                    </div>
-                    <div className="block sm:hidden">
-                        <div className="text-sm font-bold text-foreground">Apex </div>
-                        <div className="text-[11px] text-muted">School of Business</div>
-                    </div>
+
                 </a>
 
                 {/* Desktop Nav */}

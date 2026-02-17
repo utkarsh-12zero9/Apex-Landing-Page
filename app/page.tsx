@@ -22,11 +22,11 @@ export default function Home() {
         <Hero />
         <Opportunity />
         <CourseBrief />
+        <HiringPartners />
         <Modules />
         <Tools />
         <Journey />
         <AfterProgram />
-        <HiringPartners />
         <WhyApex />
         <Faculty />
         <SocialProof />

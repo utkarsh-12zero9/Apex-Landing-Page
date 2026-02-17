@@ -13,7 +13,7 @@ const slides = [
 export default function CourseBrief() {
   const programName = "AI-Driven Business Career";
   const mode = "Life-time Access";
-  const startDate = "1 Month Structured Learning";
+  const startDate = "21 Days Structured Learning";
   const live = "Live Sessions";
   const recorded = "Recorded Lectures";
   const applyLink = "#";
