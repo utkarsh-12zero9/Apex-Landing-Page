@@ -1,8 +1,6 @@
 "use client";
 
-import React from 'react';
 import Image from 'next/image'
-
 
 // Combined Data
 const ALL_TOOLS = [

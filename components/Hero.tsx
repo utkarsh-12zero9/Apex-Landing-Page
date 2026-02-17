@@ -5,7 +5,7 @@ import SparkleButton from './SparkleButton'
 
 export default function Hero() {
     return (
-        <FadeInSection id="hero" className="relative scroll-mt-18 overflow-hidden px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pt-40">
+        <FadeInSection id="hero" className="relative scroll-mt-18 overflow-hidden px-4 pb-24 pt-36 sm:px-6 lg:px-8 lg:pb-32 lg:pt-48">
             <div className="pointer-events-none absolute inset-0 -z-10">
                 <div className="mx-auto h-96 w-96 rounded-full bg-primary/20 blur-[130px]" />
             </div>
@@ -16,8 +16,8 @@ export default function Hero() {
                         <p className="mb-4 inline-flex rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-medium text-primary">
                             Future-Proof Your Career
                         </p>
-                        <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #000000 0%, #10b981 30%, #3b82f6 60%, #8b5cf6 100%)' }}>
-                            Launch Your Career in the AI-Driven World in just 21 .
+                        <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
+                            Boost Your Career with <span className="text-violet-600">AI</span><br /> in <span className="text-violet-600">just 21 Days</span>.
                         </h1>
                         <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
                             Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional.
