@@ -5,9 +5,8 @@ import Image from 'next/image';
 import { Calendar, Users, Clock, Radio, PlayCircle, ArrowRight } from 'lucide-react';
 
 const slides = [
-  { title: "Students", image: "/students.jpg" },
-  { title: "Working Professionals", image: "/working_professionals.avif" },
-  { title: "Companies", image: "/companies.png" },
+  { title: "Students", image: "/students.png" },
+  { title: "Working Professionals", image: "/working_professionals.png" },
 ];
 
 export default function CourseBrief() {

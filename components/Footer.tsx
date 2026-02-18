@@ -10,10 +10,10 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/shashikantburnwal-careers/' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/apexschoolof-business/' },
     { name: 'Instagram', icon: Instagram, href: '#' },
     { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Email', icon: Mail, href: 'mailto:contact@apexschool.com' },
+    { name: 'Email', icon: Mail, href: 'mailto:support@apexschoolofbusiness.com' },
 ];
 
 export default function Footer() {
@@ -108,7 +108,7 @@ export default function Footer() {
                                 <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                                 <div>
                                     <p className="text-sm font-medium text-white/80">Email</p>
-                                    <a href="mailto:support@salesacademy.com" className="text-sm text-white/60 hover:text-primary transition-colors">support@salesacademy.com</a>
+                                    <a href="mailto:support@salesacademy.com" className="text-sm text-white/60 hover:text-primary transition-colors">support@apexschoolofbusiness.com</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">

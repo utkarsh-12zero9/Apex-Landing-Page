@@ -40,64 +40,6 @@ export default function Support() {
 
                         <p className="text-sm text-muted-foreground mt-4">For formal queries, write to: <strong>support@apexschoolofbusiness.com</strong></p>
                     </section>
-
-                    <div className="grid md:grid-cols-2 gap-12 mt-12">
-                        {/* For Students */}
-                        <section className="space-y-4 flex flex-col h-full">
-                            <h2 className="text-2xl font-bold text-primary border-b pb-2">For Students</h2>
-                            <h3 className="text-xl font-semibold">Use WhatsApp as Primary Support</h3>
-
-                            <div className="bg-muted/30 p-6 rounded-lg flex-1">
-                                <h4 className="font-semibold mb-3">Why?</h4>
-                                <ul className="space-y-2">
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-1">✓</span>
-                                        <span>Faster response builds trust</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-1">✓</span>
-                                        <span>Students prefer chat over email</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-1">✓</span>
-                                        <span>Higher conversion from inquiry to enrollment</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-green-500 mt-1">✓</span>
-                                        <span>Easy follow-up for placements</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-
-                        {/* For Corporate / Legal */}
-                        <section className="space-y-4 flex flex-col h-full">
-                            <h2 className="text-2xl font-bold text-primary border-b pb-2">For Corporate / Legal / Formal Queries</h2>
-                            <h3 className="text-xl font-semibold">Keep Email as the Official Channel</h3>
-
-                            <div className="bg-muted/30 p-6 rounded-lg flex-1">
-                                <h4 className="font-semibold mb-3">Why?</h4>
-                                <ul className="space-y-2">
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-blue-500 mt-1">✓</span>
-                                        <span>Looks professional</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-blue-500 mt-1">✓</span>
-                                        <span>Needed for invoices and documentation</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-blue-500 mt-1">✓</span>
-                                        <span>Better for long conversations</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-blue-500 mt-1">✓</span>
-                                        <span>Required for legal notices</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
                 </div>
             </main>
             <Footer />
