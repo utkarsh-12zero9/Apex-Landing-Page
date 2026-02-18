@@ -129,9 +129,9 @@ export default function Footer() {
                         <p className="text-xs text-white/40">Owned by Hubcredo Solutions Private Limited</p>
                     </div>
                     <div className="flex items-center gap-6">
-                        <a href="#" className="text-xs text-white/40 hover:text-white/70 transition-colors">Privacy Policy</a>
-                        <a href="#" className="text-xs text-white/40 hover:text-white/70 transition-colors">Terms of Service</a>
-                        <a href="#" className="text-xs text-white/40 hover:text-white/70 transition-colors">Refund Policy</a>
+                        <a href="/Privacy" className="text-xs text-white/40 hover:text-white/70 transition-colors">Privacy Policy</a>
+                        <a href="/TermsOfUse" className="text-xs text-white/40 hover:text-white/70 transition-colors">Terms of Service</a>
+                        <a href="/Support" className="text-xs text-white/40 hover:text-white/70 transition-colors">Support</a>
                     </div>
                 </div>
             </div>

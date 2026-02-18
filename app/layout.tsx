@@ -20,8 +20,7 @@ export const metadata: Metadata = {
   },
   keywords: [
     "Apex School of Business",
-    "Top B-School Jaipur",
-    "Best MBA College Rajasthan",
+    "Top B-School",
     "PGDM Course",
     "Management Studies",
     "Business Administration",
@@ -29,20 +28,7 @@ export const metadata: Metadata = {
     "Placement Assistance",
     "Entrepreneurship",
     "Leadership",
-    "Best B-School in India"
   ],
-  openGraph: {
-    title: "Apex - School of Business",
-    description: "Launch your career with Apex School of Business - Top B-School. Expert faculty, industry exposure, and 100% placement assistance.",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Apex School of Business",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
