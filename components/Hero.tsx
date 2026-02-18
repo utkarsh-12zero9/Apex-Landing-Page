@@ -1,9 +1,43 @@
 "use client";
 
-import FadeInSection from './FadeInSection'
-import SparkleButton from './SparkleButton'
+import { useState, useEffect } from 'react';
+import FadeInSection from './FadeInSection';
+import SparkleButton from './SparkleButton';
+
+const roles = [
+    "Business Development", "Sales & Marketing", "AI automations"
+];
 
 export default function Hero() {
+    const [text, setText] = useState('');
+    const [index, setIndex] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+
+    useEffect(() => {
+        const currentRole = roles[index];
+
+        const type = () => {
+            if (isDeleting) {
+                setText(prev => prev.slice(0, -1));
+            } else {
+                setText(prev => currentRole.slice(0, prev.length + 1));
+            }
+        };
+
+        let timer: NodeJS.Timeout;
+
+        if (!isDeleting && text === currentRole) {
+            timer = setTimeout(() => setIsDeleting(true), 1000);
+        } else if (isDeleting && text === '') {
+            setIsDeleting(false);
+            setIndex((prev) => (prev + 1) % roles.length);
+        } else {
+            const speed = isDeleting ? 50 : 100;
+            timer = setTimeout(type, speed);
+        }
+
+        return () => clearTimeout(timer);
+    }, [text, isDeleting, index]);
     return (
         <FadeInSection id="hero" className="relative scroll-mt-18 overflow-hidden px-4 pb-24 pt-36 sm:px-6 lg:px-8 lg:pb-32 lg:pt-48">
             <div className="pointer-events-none absolute inset-0 -z-10">
@@ -21,6 +55,9 @@ export default function Hero() {
                         </h1>
                         <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
                             Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional.
+                        </p>
+                        <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
+                            Help You Build a Real Career in Business roles such as <span className="text-violet-600 font-semibold bg-violet-100 px-2 py-1 border-r-4">{text}</span><span className="animate-pulse"></span>.
                         </p>
                         <div className="mt-8 flex flex-col min-[420px]:flex-row gap-2">
                             <SparkleButton
