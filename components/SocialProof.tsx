@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import FadeInSection from './FadeInSection';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -18,7 +18,7 @@ const testimonials = [
         company: "Doubtnut",
         image: HiraMirza,
         testimonial:
-            "Just completed an outstanding Sales workshop by SalesAI Academy. The experience was both educational and inspiring, with a perfect blend of theory and practice. Kudos to SalesAI Academy for making professional growth so accessible."
+            "Just completed an outstanding Sales workshop by Apex School of Business. The experience was both educational and inspiring, with a perfect blend of theory and practice. Kudos to Apex School of Business for making professional growth so accessible."
     },
     {
         name: "Abhajeet Pandey",
@@ -26,7 +26,7 @@ const testimonials = [
         company: "NatWest Group",
         image: AbhayjeetPandey,
         testimonial:
-            "SalesAI Academy Workshop helped me to understand what B2B Sales is in a true sense. I also learned tools like Apollo.io, Instantly that I intend to use for my lead generation work. Also AI-based automation and workflows were eye-openers for me."
+            "Apex School of Business Workshop helped me to understand what B2B Sales is in a true sense. I also learned tools like Apollo.io, Instantly that I intend to use for my lead generation work. Also AI-based automation and workflows were eye-openers for me."
     },
     {
         name: "Kratika Gulwani",
@@ -34,7 +34,7 @@ const testimonials = [
         company: "PadCare",
         image: KratikaGulwani,
         testimonial:
-            "As a marketing professional, I had always a curiosity to know sales side of the business. How a MQL becomes a SQL, lot of process goes behind that and SalesAI Academy workshop taught me that. Moreover, I learn some cool tools of lead generations."
+            "As a marketing professional, I had always a curiosity to know sales side of the business. How a MQL becomes a SQL, lot of process goes behind that and Apex School of Business workshop taught me that. Moreover, I learn some cool tools of lead generations."
     },
     {
         name: "Sachi B",
@@ -42,7 +42,7 @@ const testimonials = [
         company: "",
         image: SachiB,
         testimonial:
-            "Kudos to SalesAI Academy for making professional growth so accessible and impactful. The experience was both educational and inspiring, with a perfect blend of theory and practice. A big shoutout to SalesAI Academy and Team organizing this."
+            "Kudos to Apex School of Business for making professional growth so accessible and impactful. The experience was both educational and inspiring, with a perfect blend of theory and practice. A big shoutout to Apex School of Business and Team organizing this."
     },
     {
         name: "Yukta Kanjani",
@@ -50,7 +50,7 @@ const testimonials = [
         company: "RegisterKaro",
         image: YuktaKanjani,
         testimonial:
-            "What stood out most was the focus on customer-centered selling—listening carefully, understanding needs, and offering helpful solutions. Also, the networking opportunities added great value, providing fresh perspectives and ideas."
+            "What stood out most was the focus on customer-centered selling — listening carefully, understanding needs, and offering helpful solutions. Also, the networking opportunities added great value, providing fresh perspectives and ideas."
     },
     {
         name: "Tapan Ghadge",
@@ -58,14 +58,36 @@ const testimonials = [
         company: "My Cloud Crew",
         image: TapanGhadge,
         testimonial:
-            "Attended the SalesAI Academy Bootcamp on B2B Sales, and it was truly hands-on filled with lot of learning and tools. It's not every day that you find workshops that combine learning with real-world application so seamlessly."
+            "Attended the Apex School of Business Bootcamp on B2B Sales, and it was truly hands-on filled with lot of learning and tools. It's not every day that you find workshops that combine learning with real-world application so seamlessly."
     }
 ];
 
 export default function SocialProof() {
     const [page, setPage] = useState(0);
-    const perPage = 3;
+    const [perPage, setPerPage] = useState(3);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setPerPage(2);
+            } else {
+                setPerPage(3);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const totalPages = Math.ceil(testimonials.length / perPage);
+
+    // Reset page if it exceeds totalPages after resize
+    useEffect(() => {
+        if (page >= totalPages && totalPages > 0) {
+            setPage(0);
+        }
+    }, [totalPages, page]);
 
     const visibleItems = testimonials.slice(page * perPage, page * perPage + perPage);
 

@@ -53,7 +53,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-4">
                             Quick Links
                         </h3>
                         <ul className="space-y-3">
@@ -73,7 +73,7 @@ export default function Footer() {
 
                     {/* Get Started */}
                     <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-4">
                             Get Started
                         </h3>
                         <p className="text-sm text-white/60 leading-relaxed mb-5">
@@ -90,7 +90,7 @@ export default function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-4">
                             Contact
                         </h3>
                         <ul className="space-y-4">
