@@ -3,10 +3,10 @@
 import { Linkedin, Instagram, Twitter, Mail, ArrowUpRight, Phone, MapPin } from 'lucide-react';
 
 const quickLinks = [
-    { name: 'Curriculum', href: '#modules' },
-    { name: 'Faculty', href: '#faculty' },
-    { name: 'Testimonials', href: '#faculty' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Curriculum', href: '/#modules' },
+    { name: 'Faculty', href: '/#faculty' },
+    { name: 'Testimonials', href: '/#faculty' },
+    { name: 'FAQ', href: '/#faq' },
 ];
 
 const socialLinks = [
@@ -25,7 +25,7 @@ export default function Footer() {
 
                     {/* Brand Column */}
                     <div className="sm:col-span-2 lg:col-span-1">
-                        <a href="#hero" className="flex items-center gap-3 group">
+                        <a href="/#hero" className="flex items-center gap-3 group">
                             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent shadow-lg">
                                 <span className="text-sm font-extrabold text-white">AI</span>
                             </div>
@@ -83,7 +83,7 @@ export default function Footer() {
                             Ready to launch your career in the AI-driven business world?
                         </p>
                         <a
-                            href="#final-cta"
+                            href="/#final-cta"
                             className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300"
                         >
                             Enroll Now

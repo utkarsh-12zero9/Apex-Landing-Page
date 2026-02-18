@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 const links = [
-    { name: 'Curriculum', href: '#modules' },
-    { name: 'About', href: '#apex' },
-    { name: 'Faculty', href: '#faculty' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Curriculum', href: '/#modules' },
+    { name: 'About', href: '/#apex' },
+    { name: 'Faculty', href: '/#faculty' },
+    { name: 'FAQ', href: '/#faq' },
 ]
 
 export default function NavBar() {
@@ -38,7 +38,7 @@ export default function NavBar() {
                 style={{ backdropFilter: 'blur(20px) saturate(1.5)', WebkitBackdropFilter: 'blur(20px) saturate(1.5)' }}
             >
                 {/* Logo - left */}
-                <a href="#hero" className="flex items-center gap-3 group">
+                <a href="/#hero" className="flex items-center gap-3 group">
                     <div className="flex relative h-12 w-[180px] items-center justify-start transition-all duration-300 group-hover:scale-105">
                         <Image src="/logo.png" alt="Apex Logo" fill className="object-contain object-left" />
                     </div>
@@ -61,7 +61,7 @@ export default function NavBar() {
                 {/* Right CTA (Desktop) */}
                 <div className="hidden md:flex items-center gap-3">
                     <a
-                        href="#final-cta"
+                        href="/#final-cta"
                         className="rounded-xl bg-primary px-5 py-2 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300"
                     >
                         Join Now
@@ -99,7 +99,7 @@ export default function NavBar() {
                             ))}
                             <hr className="border-black/5 my-1" />
                             <a
-                                href="#final-cta"
+                                href="/#final-cta"
                                 onClick={() => setIsOpen(false)}
                                 className="w-full text-center rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-300"
                             >
