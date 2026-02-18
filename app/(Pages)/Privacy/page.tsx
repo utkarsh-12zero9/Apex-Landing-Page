@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
 
                     {/* Personal Information */}
                     <section>
-                        <h2 className="text-2xl font-bold mb-4">PERSONAL INFORMATION</h2>
+                        <h2 className="text-2xl font-bold mb-4">PERSONAL & SENSITIVE INFORMATION</h2>
                         <div className="space-y-4 text-muted-foreground/90 leading-relaxed">
                             <p><strong>Personal Information</strong> means information that identifies you directly or indirectly, including but not limited to:</p>
                             <ul className="list-disc pl-5 space-y-2">
@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
                                 <li>IP address</li>
                                 <li>Profile details</li>
                             </ul>
-                            <p><strong>SENSITIVE PERSONAL INFORMATION</strong> includes:</p>
+                            <p><strong>Sensitive Information</strong> includes:</p>
                             <ul className="list-disc pl-5 space-y-2">
                                 <li>Passwords</li>
                                 <li>Financial information</li>
