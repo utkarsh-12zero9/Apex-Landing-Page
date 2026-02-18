@@ -4,13 +4,19 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import FadeInSection from './FadeInSection';
 import { motion, AnimatePresence } from 'framer-motion';
+import HiraMirza from "../public/Hira Mirza.png";
+import AbhayjeetPandey from "../public/Abhayjeet Pandey.png";
+import KratikaGulwani from "../public/Kratika Gulwani.png";
+import SachiB from "../public/Sachi.png";
+import YuktaKanjani from "../public/Yukta.png";
+import TapanGhadge from "../public/Tapan.png";
 
 const testimonials = [
     {
         name: "Hira Mirza",
         role: "BD Executive",
         company: "Doubtnut",
-        image: "/images/testimonials/hira-mirza.jpg",
+        image: HiraMirza,
         testimonial:
             "Just completed an outstanding Sales workshop by SalesAI Academy. The experience was both educational and inspiring, with a perfect blend of theory and practice. Kudos to SalesAI Academy for making professional growth so accessible."
     },
@@ -18,7 +24,7 @@ const testimonials = [
         name: "Abhajeet Pandey",
         role: "Operations Analyst",
         company: "NatWest Group",
-        image: "/images/testimonials/abhajeet-pandey.jpg",
+        image: AbhayjeetPandey,
         testimonial:
             "SalesAI Academy Workshop helped me to understand what B2B Sales is in a true sense. I also learned tools like Apollo.io, Instantly that I intend to use for my lead generation work. Also AI-based automation and workflows were eye-openers for me."
     },
@@ -26,7 +32,7 @@ const testimonials = [
         name: "Kratika Gulwani",
         role: "Marketing Manager",
         company: "PadCare",
-        image: "/images/testimonials/kratika-gulwani.jpg",
+        image: KratikaGulwani,
         testimonial:
             "As a marketing professional, I had always a curiosity to know sales side of the business. How a MQL becomes a SQL, lot of process goes behind that and SalesAI Academy workshop taught me that. Moreover, I learn some cool tools of lead generations."
     },
@@ -34,7 +40,7 @@ const testimonials = [
         name: "Sachi B",
         role: "AI Strategist | Business Development",
         company: "",
-        image: "/images/testimonials/sachi-b.jpg",
+        image: SachiB,
         testimonial:
             "Kudos to SalesAI Academy for making professional growth so accessible and impactful. The experience was both educational and inspiring, with a perfect blend of theory and practice. A big shoutout to SalesAI Academy and Team organizing this."
     },
@@ -42,7 +48,7 @@ const testimonials = [
         name: "Yukta Kanjani",
         role: "Sr. BD Associate",
         company: "RegisterKaro",
-        image: "/images/testimonials/yukta-kanjani.jpg",
+        image: YuktaKanjani,
         testimonial:
             "What stood out most was the focus on customer-centered selling—listening carefully, understanding needs, and offering helpful solutions. Also, the networking opportunities added great value, providing fresh perspectives and ideas."
     },
@@ -50,7 +56,7 @@ const testimonials = [
         name: "Tapan Ghadge",
         role: "Sr. BD Manager",
         company: "My Cloud Crew",
-        image: "/images/testimonials/tapan-ghadge.jpg",
+        image: TapanGhadge,
         testimonial:
             "Attended the SalesAI Academy Bootcamp on B2B Sales, and it was truly hands-on filled with lot of learning and tools. It's not every day that you find workshops that combine learning with real-world application so seamlessly."
     }
@@ -106,7 +112,7 @@ export default function SocialProof() {
                                 <div className="mt-8 flex items-center gap-4 pt-6 border-t border-primary/5">
                                     <div className="w-12 h-12 rounded-full overflow-hidden bg-primary/10 border-2 border-primary/20 flex-shrink-0">
                                         <img
-                                            src={item.image}
+                                            src={item.image.src}
                                             alt={item.name}
                                             className="w-full h-full object-cover"
                                             onError={(e) => {

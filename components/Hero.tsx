@@ -51,14 +51,16 @@ export default function Hero() {
                             India’s First Execution Focused Business School
                         </p>
                         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
-                            Launch Your Career in the <span className="text-violet-600">AI-Driven</span> World in <span className="text-violet-600">just 21 Days</span>.
+                            Launch Your Career in the <span className="text-violet-600">AI-Driven</span> World in <span className="text-violet-600">Just 21 Days</span>.
                         </h1>
-                        <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
-                            Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional.
+
+                        <p className="mt-4 max-w-3xl text-base text-muted sm:text-lg">
+                            Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional. <br />
+                            <span className="text-black">We Help You Build a Real Career in Business roles such as </span><span className="text-violet-600 font-semibold bg-violet-100 px-2 md:py-1 border-r-4">{text}.</span><span className="animate-pulse"></span>
                         </p>
-                        <p className="mt-6 max-w-3xl text-base text-muted sm:text-lg">
-                            Help You Build a Real Career in Business roles such as <span className="text-violet-600 font-semibold bg-violet-100 px-2 py-1 border-r-4">{text}</span><span className="animate-pulse"></span>.
-                        </p>
+
+
+
                         <div className="mt-8 flex flex-col min-[420px]:flex-row gap-2">
                             <SparkleButton
                                 href="#final-cta"
@@ -76,7 +78,8 @@ export default function Hero() {
                     </div>
 
                     {/* Right Video - 40% width on desktop, responsive on mobile */}
-                    <div className="w-full lg:w-2/5 flex justify-center">
+                    {/* Right Video - 40% width on desktop, responsive on mobile */}
+                    <div className="w-full lg:w-2/5 flex flex-col items-center">
                         <div className="w-full aspect-video rounded-2xl overflow-hidden max-w-[480px]">
                             <iframe
                                 src="https://www.youtube.com/embed/JpRhFScdXmk?si=We9gYQI7L74op4U3"
@@ -88,6 +91,7 @@ export default function Hero() {
                                 className="w-full h-full rounded-2xl"
                             />
                         </div>
+
                     </div>
                 </div>
             </div>

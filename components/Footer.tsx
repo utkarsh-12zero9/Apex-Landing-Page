@@ -1,6 +1,7 @@
 "use client";
 
 import { Linkedin, Instagram, Twitter, Mail, ArrowUpRight, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 const quickLinks = [
     { name: 'Curriculum', href: '/#modules' },
@@ -25,13 +26,9 @@ export default function Footer() {
 
                     {/* Brand Column */}
                     <div className="sm:col-span-2 lg:col-span-1">
-                        <a href="/#hero" className="flex items-center gap-3 group">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent shadow-lg">
-                                <span className="text-sm font-extrabold text-white">AI</span>
-                            </div>
-                            <div>
-                                <div className="text-base font-bold">Apex</div>
-                                <div className="text-xs text-white/50">School of Business</div>
+                        <a href="/#hero" className="flex items-start gap-3 group">
+                            <div className="flex relative h-12 w-[180px] items-center justify-start transition-all duration-300 group-hover:scale-105">
+                                <Image src="/logo.png" alt="Apex Logo" fill className="object-contain object-left brightness-0 invert" />
                             </div>
                         </a>
                         <p className="mt-4 text-sm text-white/60 leading-relaxed max-w-xs">
@@ -125,7 +122,7 @@ export default function Footer() {
                 {/* Divider */}
                 <div className="mt-12 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div className="flex flex-col gap-1">
-                        <p className="text-xs text-white/50">© 2026 SalesAI Academy</p>
+                        <p className="text-xs text-white/50">© 2026 Apex School of Business</p>
                         <p className="text-xs text-white/40">Owned by Hubcredo Solutions Private Limited</p>
                     </div>
                     <div className="flex items-center gap-6">
