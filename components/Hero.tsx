@@ -5,7 +5,9 @@ import FadeInSection from './FadeInSection';
 import SparkleButton from './SparkleButton';
 
 const roles = [
-    "Business Development", "Sales & Marketing", "AI automations"
+    "Business Development",
+    "Sales & Marketing",
+    "AI automations"
 ];
 
 export default function Hero() {
