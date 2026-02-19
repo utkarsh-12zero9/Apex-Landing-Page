@@ -3,11 +3,20 @@
 import { useState, useEffect } from 'react';
 import FadeInSection from './FadeInSection';
 import SparkleButton from './SparkleButton';
+import { GraduationCap, Zap, Blocks, Award } from 'lucide-react';
+
 
 const roles = [
     "Business Development",
     "Sales & Marketing",
     "AI automations"
+];
+
+const stats = [
+    { label: "Placement Support", subtext: "You don’t just learn. You get placed.", icon: GraduationCap },
+    { label: "AI Powered", subtext: "Learn with advanced AI tools", icon: Zap },
+    { label: "15+ AI Tools", subtext: "Master industry-standard stack", icon: Blocks },
+    { label: "Get Certified", subtext: "Get certified by industry experts", icon: Award },
 ];
 
 export default function Hero() {
@@ -41,7 +50,7 @@ export default function Hero() {
         return () => clearTimeout(timer);
     }, [text, isDeleting, index]);
     return (
-        <FadeInSection id="hero" className="relative scroll-mt-18 overflow-hidden px-4 pb-24 pt-36 sm:px-6 lg:px-8 lg:pb-32 lg:pt-48">
+        <FadeInSection id="hero" className="relative scroll-mt-18 overflow-hidden px-4 pb-8 pt-24 sm:px-6 lg:px-8 lg:pb-12 lg:pt-30">
             <div className="pointer-events-none absolute inset-0 -z-10">
                 <div className="mx-auto h-96 w-96 rounded-full bg-primary/20 blur-[130px]" />
             </div>
@@ -80,9 +89,8 @@ export default function Hero() {
                     </div>
 
                     {/* Right Video - 40% width on desktop, responsive on mobile */}
-                    {/* Right Video - 40% width on desktop, responsive on mobile */}
-                    <div className="w-full lg:w-2/5 flex flex-col items-center">
-                        <div className="w-full aspect-video rounded-2xl overflow-hidden max-w-[480px]">
+                    <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
+                        <div className="w-full h-full aspect-video rounded-2xl overflow-hidden shadow-2xl mx-auto">
                             <iframe
                                 src="https://www.youtube.com/embed/JpRhFScdXmk?si=We9gYQI7L74op4U3"
                                 title="YouTube video player"
@@ -93,8 +101,25 @@ export default function Hero() {
                                 className="w-full h-full rounded-2xl"
                             />
                         </div>
-
                     </div>
+                </div>
+
+                <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 sm:gap-4 rounded-xl">
+                    {stats.map((stat, index) => {
+                        const Icon = stat.icon;
+                        return (
+                            <div
+                                key={index}
+                                className={`flex flex-col items-center justify-center gap-1 px-4 py-4 rounded-xl backdrop-blur-md transition-all group text-center bg-primary/5 hover:bg-primary/12 border border-primary/20`}
+                            >
+                                <div className={`flex items-center gap-2 text-xl font-bold text-primary`}>
+                                    <Icon className="w-5 h-5" />
+                                    <h3>{stat.label}</h3>
+                                </div>
+                                <p className={`text-sm text-gray-600`}>{stat.subtext}</p>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </FadeInSection>

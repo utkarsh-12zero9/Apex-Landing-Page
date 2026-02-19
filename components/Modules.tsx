@@ -29,113 +29,120 @@ const modules = [
 const modulesNew = [
     {
         "module": "Module 1",
-        "heading": "Know Your Customer Before Targeting",
-        "description": "Understand who your ideal customer is before you reach out. Learn how to clearly define the right type of buyers for your product or service.",
+        "heading": "Know Your Customer with Data and AI",
+        "description": "Understand who your ideal customer is before you reach out. Use data thinking and AI prompts to clearly define the right type of buyers for your product or service.",
         "tags": [
             "Live guidance",
-            "3W framework",
+            "3W customer clarity framework",
+            "AI assisted customer research prompts",
             "Customer profile template",
-            "AI prompt sheet",
             "Practice assignments"
         ]
     },
     {
         "module": "Module 2",
-        "heading": "Build a Smart Prospect List",
-        "description": "Turn your customer profile into a real list of potential buyers. Use smart filters and buying signals to find qualified leads.",
+        "heading": "Build a Smart Prospect List Using AI Signals",
+        "description": "Turn your customer profile into a real list of potential buyers. Use smart filters, buying signals, and AI insights to find qualified leads faster.",
         "tags": [
             "Prospect list template",
             "Buying signal examples",
-            "Hands-on exercises",
+            "AI assisted lead filtering guide",
+            "Hands on exercises",
             "List review and feedback"
         ]
     },
     {
         "module": "Module 3",
-        "heading": "Set Up Email Outreach That Works",
-        "description": "Learn how to set up professional email campaigns that stay healthy and get replies.",
+        "heading": "Launch AI Powered Email Campaigns",
+        "description": "Build simple, healthy email campaigns using AI that reach inboxes and start real conversations. Learn how to structure, write, and optimize outreach with AI support.",
         "tags": [
             "Campaign setup sheet",
-            "Step-by-step email setup guide",
+            "Step by step email setup guide",
             "Domain safety basics",
-            "Email writing frameworks",
-            "AI writing prompts"
+            "AI email writing frameworks",
+            "AI prompt library for personalization",
+            "Performance tracking guide"
         ]
     },
     {
         "module": "Module 4",
-        "heading": "Reach Buyers on LinkedIn",
-        "description": "Send messages that feel human, clear and relevant. Learn how to do it manually and how to automate safely.",
+        "heading": "Reach Buyers on LinkedIn with Smart Automation",
+        "description": "Send messages that feel human, clear, and relevant. Combine manual outreach with AI assisted personalization and safe automation systems.",
         "tags": [
-            "Message templates",
+            "AI assisted message templates",
             "Customer aligned scripts",
-            "Aimfox automation guide",
+            "Automation setup guide",
             "Message review and feedback"
         ]
     },
     {
         "module": "Module 5",
-        "heading": "Confident Cold Calling",
-        "description": "Learn simple call flows that improve conversations and reduce fear.",
+        "heading": "Confident Cold Calling with AI Preparation",
+        "description": "Learn simple call flows that improve conversations and reduce fear. Use AI to prepare scripts, objection responses, and call simulations before real conversations.",
         "tags": [
             "Call scripts",
-            "Practice assignments",
+            "AI objection handling prompts",
             "Call structure guide",
             "Call recording review",
-            "Objection handling practice"
+            "Practice assignments"
         ]
     },
     {
         "module": "Module 6",
         "heading": "Build a Multi Channel Outreach System",
-        "description": "Combine email, LinkedIn and calls into one structured system. Learn how to run outreach in an organized and repeatable way.",
+        "description": "Combine email, LinkedIn, calls, and AI workflows into one structured system. Run outreach in an organized, measurable, and repeatable way.",
         "tags": [
             "Multi channel campaign structure",
-            "Daily outreach plan",
+            "Daily outreach execution plan",
             "Process documentation guide",
-            "Execution checklist"
+            "Execution checklist",
+            "Tracking dashboard framework"
         ]
     },
     {
         "module": "Module 7",
-        "heading": "Automate Your Outreach with AI",
-        "description": "See how modern teams automate lead generation and messaging using AI tools.",
+        "heading": "Build AI Driven Outreach Automation",
+        "description": "See how modern teams automate lead generation, follow ups, and workflows using AI tools. Design simple automation systems that save time and increase output.",
         "tags": [
             "Automation workflow examples",
             "AI messaging templates",
-            "Step-by-step automation guide",
-            "Example automation library"
+            "Step by step automation guide",
+            "Example automation library",
+            "System building assignments"
         ]
     },
     {
         "module": "Module 8",
-        "heading": "Become 10X Better in Your Role",
-        "description": "Improve how you handle objections, client conversations and follow ups.",
+        "heading": "Perform Like a Top 10 Percent Professional",
+        "description": "Improve how you handle objections, client conversations, follow ups, and account growth. Use AI to refine communication and prepare for high stakes conversations.",
         "tags": [
             "Practical objection handling training",
             "Champion client meeting guide",
             "Account management basics",
+            "AI conversation refinement prompts",
             "Daily performance system"
         ]
     },
     {
         "module": "Module 9",
-        "heading": "Prepare and Crack the Job",
-        "description": "Get ready to confidently apply for sales and business roles.",
+        "heading": "Prepare and Crack the Job with AI Positioning",
+        "description": "Get ready to confidently apply for sales and business roles. Use AI to refine your resume, portfolio, and interview responses.",
         "tags": [
             "Resume building support",
+            "AI optimized resume prompts",
             "Portfolio creation guide",
             "Interview question practice",
             "Mock interview sessions",
             "Application strategy guidance"
         ]
     }
-];
+]
+
 
 const TAG_COLORS = [
     { bg: "bg-orange-100", text: "text-orange-800", border: "border-orange-200" },
     { bg: "bg-blue-100", text: "text-blue-800", border: "border-blue-200" },
-    { bg: "bg-green-100", text: "text-green-800", border: "border-green-200" },
+    { bg: "bg-emerald-100", text: "text-emerald-800", border: "border-emerald-200" },
     { bg: "bg-purple-100", text: "text-purple-800", border: "border-purple-200" },
     { bg: "bg-pink-100", text: "text-pink-800", border: "border-pink-200" },
 ];
