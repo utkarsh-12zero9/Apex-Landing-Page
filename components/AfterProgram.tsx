@@ -6,12 +6,12 @@ import SparkleButton from './SparkleButton';
 
 export default function AfterProgram() {
     const benefits = [
-        "We refine your resume to match real hiring standards.",
-        "We conduct structured mock interviews with role specific scenarios.",
-        "We help you position your projects and practical work confidently.",
-        "We guide you on where and how to apply strategically.",
-        "We support you during interview rounds with feedback and improvements.",
-        "You stay part of a focused career community with ongoing guidance."
+        "Your resume gets refined to meet real hiring standards",
+        "Your portfolio is built to showcase what you can actually do",
+        "You attend structured mock interviews with role-specific feedback",
+        "We connect you with actively hiring companies and secure interviews",
+        "You get continuous support through every interview round",
+        "You walk in confident. You walk out hired"
     ];
 
     return (
@@ -22,7 +22,7 @@ export default function AfterProgram() {
                         What Happens <span className="text-primary">After the Program ?</span>
                     </h2>
                     <p className="text-xl text-muted">
-                        We stay with you until you are confident and market ready.
+                        We stay with you until you are confident and crack your next job
                     </p>
                 </div>
 
