@@ -36,7 +36,7 @@ export default function HiringPartners() {
                         Hiring <span className="text-primary">Partners</span>
                     </h2>
                     <p className="text-xl text-muted">
-                        We have partnered with some of the best companies to provide you with the best opportunities.
+                        We have partnered with some of the good companies to provide you with the right job opportunities.
                     </p>
                 </div>
             </div>
