@@ -13,10 +13,10 @@ const roles = [
 ];
 
 const stats = [
-    { label: "Placement Support", subtext: "You don’t just learn. You get placed.", icon: GraduationCap },
-    { label: "AI Powered", subtext: "Learn with advanced AI tools", icon: Zap },
-    { label: "15+ AI Tools", subtext: "Master industry-standard stack", icon: Blocks },
-    { label: "Get Certified", subtext: "Get certified by industry experts", icon: Award },
+    { label: "Placement Support", subtext: "You don’t just learn. We actively support you in securing job interviews and cracking them.", icon: GraduationCap },
+    { label: "Recruiter Connect", subtext: "Get direct access to recruiter networks and hiring companies looking for business talent.", icon: Zap },
+    { label: "15+ AI Tools", subtext: "Learn and practice with the same AI tools modern teams use every day.", icon: Blocks },
+    { label: "Industry Certification", subtext: "Earn a certification that validates your practical, job-ready skills.", icon: Award },
 ];
 
 export default function Hero() {
@@ -62,12 +62,12 @@ export default function Hero() {
                             India’s First Execution Focused Business School
                         </p>
                         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
-                            Launch Your Career in the <span className="text-violet-600">AI-Driven</span> World in <span className="text-violet-600">Just 21 Days</span>.
+                            Get Hired in <span className="text-violet-600">Business Roles</span> in <span className="text-violet-600">AI-Driven</span> Wrold.
                         </h1>
 
                         <p className="mt-4 max-w-3xl text-base text-muted sm:text-lg">
-                            Learn practical business skills, automation systems and execution frameworks that turn you into an industry-ready professional. <br />
-                            <span className="text-black">We Help You Build a Real Career in Business roles such as </span><span className="text-violet-600 font-semibold bg-violet-100 px-2 md:py-1 border-r-4">{text}.</span><span className="animate-pulse"></span>
+                            A 3-week program taught by IIT and ISB alumni that trains you on the exact AI tools, outreach systems, and execution skills companies are actively hiring for, with placement support until you land the role. <br />
+                            <span className="text-black text-2xl font-semibold">Build a Career in Business roles such as </span><span className="text-violet-600 text-2xl font-semibold bg-violet-100 px-2 md:py-1 border-r-4">{text}.</span><span className="animate-pulse"></span>
                         </p>
 
 
@@ -104,19 +104,22 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 sm:gap-4 rounded-xl">
+                <div className="mt-10 grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
                     {stats.map((stat, index) => {
                         const Icon = stat.icon;
                         return (
                             <div
                                 key={index}
-                                className={`flex flex-col items-center justify-center gap-1 px-4 py-4 rounded-xl backdrop-blur-md transition-all group text-center bg-primary/5 hover:bg-primary/12 border border-primary/20`}
+                                className="flex flex-col items-center gap-3 px-4 py-5 rounded-2xl text-center bg-primary/5 border border-primary/15 hover:bg-primary/10 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
                             >
-                                <div className={`flex items-center gap-2 text-xl font-bold text-primary`}>
-                                    <Icon className="w-5 h-5" />
-                                    <h3>{stat.label}</h3>
+                                {/* Icon bubble */}
+                                <div className="flex items-center justify-center w-11 h-11 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-200 shrink-0">
+                                    <Icon className="w-5 h-5 text-primary" />
                                 </div>
-                                <p className={`text-sm text-gray-600`}>{stat.subtext}</p>
+                                {/* Label */}
+                                <h3 className="text-sm font-bold text-primary leading-snug">{stat.label}</h3>
+                                {/* Subtext — hidden on mobile to keep cards compact */}
+                                <p className="hidden sm:block text-xs text-gray-500 leading-relaxed">{stat.subtext}</p>
                             </div>
                         );
                     })}
