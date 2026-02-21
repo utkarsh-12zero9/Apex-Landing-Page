@@ -9,10 +9,10 @@ const journeyData = [
         sectionTag: "Start of Program",
         title: "Onboarding and Orientation",
         description: [
-            "You attend a structured live onboarding session.",
-            "Understand the roadmap, tools, assignments, and expectations.",
-            "Get access to the private community.",
-            "Set clear goals for the next 3 weeks."
+            "Get access to your learning modules and tools",
+            "Understand the complete roadmap, assignments, and expectations",
+            "Join your learning cohort and community",
+            "Start on-demand learning modules"
         ],
         timeline: "Day 1",
         phase: "Onboarding",
@@ -39,11 +39,10 @@ const journeyData = [
         sectionTag: "Live Interactions",
         title: "Mentored Sessions",
         description: [
-            "Join live sessions twice a week.",
-            "Ask doubts.",
-            "Get assignment reviews.",
-            "Understand real world business use cases.",
-            "Fix mistakes early."
+            "Join live sessions twice every week",
+            "Ask questions and get real-time clarity",
+            "Learn from mentors and peer discussions",
+            "Get practical insights from real business situations"
         ],
         timeline: "2 Times a Week",
         phase: "Live Zoom Sessions",
@@ -53,12 +52,12 @@ const journeyData = [
     },
     {
         sectionTag: "Career Preparation",
-        title: "Resume Review and Mock Interview",
+        title: "Career Preparation & Interview Readiness",
         description: [
-            "Get your resume reviewed with clear improvement suggestions.",
-            "Align your profile with targeted roles.",
-            "Attend a structured mock interview.",
-            "Receive detailed feedback on clarity, positioning, and confidence."
+            "Build a strong resume and practical portfolio",
+            "Align your profile with targeted business roles",
+            "Practice through real-life mock interviews",
+            "Receive detailed feedback on your job-readiness"
         ],
         timeline: "Week 4",
         phase: "Interview Readiness",
@@ -68,12 +67,12 @@ const journeyData = [
     },
     {
         sectionTag: "Placement Support",
-        title: "2 Months Guided Support",
+        title: "2 Months Placement Support",
         description: [
-            "Receive structured guidance on company shortlisting.",
-            "Get help with application strategy and positioning.",
-            "Prepare for interviews with continuous feedback.",
-            "Track progress and improve performance with mentor support."
+            "Receive our support for job placement",
+            "Get help with recruiter connections",
+            "Prepare for interviews with continuous feedback",
+            "Track your progress and improve performance with mentor support"
         ],
         timeline: "Post Program",
         phase: "Placement Assistance Phase",
@@ -161,12 +160,12 @@ function TimelineItem({ item, index }: { item: any, index: number }) {
                     {/* Speech Bubble Triangle (Mobile) */}
                     <div className={`md:hidden absolute top-8 -left-3 w-6 h-6 rotate-45 ${item.color}`} />
 
-                    <div className="flex justify-between items-start mb-4">
+                    <div className="flex justify-between items-start">
                         <div className="flex flex-col">
                             <span className="text-xs font-semibold uppercase tracking-wider text-foreground/70 mb-1">
                                 {item.sectionTag}
                             </span>
-                            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
                                 {item.title}
                             </h3>
                         </div>
@@ -178,7 +177,7 @@ function TimelineItem({ item, index }: { item: any, index: number }) {
                     <ul className="space-y-2">
                         {item.description.map((point: string, i: number) => (
                             <li key={i} className="text-foreground/80 leading-relaxed text-sm md:text-base flex items-start gap-2">
-                                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-foreground/60 flex-shrink-0" />
+                                <span className="mt-2 md:mt-2.5 w-1.5 h-1.5 rounded-full bg-foreground/60 flex-shrink-0" />
                                 {point}
                             </li>
                         ))}
