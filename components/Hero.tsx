@@ -62,7 +62,7 @@ export default function Hero() {
                             India’s First Execution Focused Business School
                         </p>
                         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
-                            Get Hired in <span className="text-violet-600">Business Roles</span> in <span className="text-violet-600">AI-Driven</span> Wrold.
+                            Get Hired in <span className="text-violet-600">Business Roles</span> in <span className="text-violet-600">AI-Driven</span> World.
                         </h1>
 
                         <p className="mt-4 max-w-3xl text-base text-muted sm:text-lg">
