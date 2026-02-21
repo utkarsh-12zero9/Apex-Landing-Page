@@ -23,18 +23,18 @@ const faculty = [
         youtube: "https://youtube.com/@shashikant.burnwal?si=n3n9FuVGVgrjd_31"
     },
     {
-        name: "Ian Jason Creado",
-        subheading: "10+ Years in B2B Sales and Marketing",
-        credential: `Ian has consulted 20+ companies across India and the US on sales growth, and built a 6-figure dollar income independently through Upwork. He knows what it takes to sell, what clients actually look for, and how to position yourself to win in a competitive market. He teaches from real deals, not textbooks.`,
-        image: "/ian_jason_creado.jpg",
-        linkedin: "https://www.linkedin.com/in/ian-jason-creado-365a3119b/"
-    },
-    {
         name: "Anurag Bhatnagar",
         subheading: "30+ Years Experience | Citibank, HDFC, MaxLife | Founder, ShiftAltCap",
         credential: `Anurag has spent three decades at the highest levels of corporate finance and business. As founder of a wealthTech company, he understands both the corporate world you're entering and what it takes to build something from scratch. He gives you the insider perspective and real tips to excel in your career.`,
         image: "/anurag_bhatnagar.jpg",
         linkedin: "https://www.linkedin.com/in/leobhatnagar/ "
+    },
+    {
+        name: "Ian Jason Creado",
+        subheading: "10+ Years in B2B Sales and Marketing",
+        credential: `Ian has consulted 20+ companies across India and the US on sales growth, and built a 6-figure dollar income independently through Upwork. He knows what it takes to sell, what clients actually look for, and how to position yourself to win in a competitive market. He teaches from real deals, not textbooks.`,
+        image: "/ian_jason_creado.jpg",
+        linkedin: "https://www.linkedin.com/in/ian-jason-creado-365a3119b/"
     }
 ];
 

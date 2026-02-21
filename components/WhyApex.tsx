@@ -1,49 +1,72 @@
 "use client";
 
-import { Wrench, Rocket, GraduationCap, BrainCircuit, MonitorPlay, Users, FolderOpen, Zap } from 'lucide-react';
+import { Hammer, Briefcase, LayoutDashboard, CalendarCheck, BadgeCheck, Trophy } from 'lucide-react';
 import { type LucideIcon } from 'lucide-react';
 
 const iconMap: Record<string, LucideIcon> = {
-    "ai-driven-careers": BrainCircuit,
-    "placement-learning": GraduationCap,
-    "hands-on-execution": Rocket,
-    "industry-tools": Wrench,
-    "hybrid-learning": MonitorPlay,
-    "automation-skills": Zap,
+    "learn-by-doing": Hammer,
+    "placement-learning": Briefcase,
+    "hands-on-execution": CalendarCheck,
+    "industry-tools": LayoutDashboard,
+    "hybrid-learning": BadgeCheck,
+    "automation-skills": Trophy,
 };
 
 const features = [
     {
-        icon: "ai-driven-careers",
-        heading: "Built for AI-Driven Careers",
-        para: "Develop practical skills for sales, growth and business development roles."
+        icon: "learn-by-doing",
+        heading: "Learn by Doing",
+        highlights: ["Learn"],
+        para: "Build real campaigns, outreach systems, and automation workflows, not just watch videos."
     },
     {
         icon: "placement-learning",
-        heading: "Placement-Focused Learning",
-        para: "Learn for 1 month and get structured career support for the next 2 months."
+        heading: "Mentors Who Have Done the Job",
+        highlights: ["Mentors", "Done the Job"],
+        para: "Learn from leaders with IIT, ISB backgrounds and real experience across Tata, Ola, Citibank, and HDFC."
     },
     {
         icon: "industry-tools",
-        heading: "Real Industry Tools",
-        para: "Train on OpenAI, Apollo, Instantly and automation systems used by modern business teams."
+        heading: "Tools That Get You Interviews",
+        highlights: ["Tools", "Interviews"],
+        para: "Train on OpenAI, Apollo, Instantly, HubSpot, n8n, the stack modern recruiters look for."
     },
     {
         icon: "hands-on-execution",
-        heading: "Hands-On Execution",
-        para: "Build real outreach campaigns, workflows and automation projects inside the program."
+        heading: "3 Weeks to Learn. 2 Months of Placement Support.",
+        highlights: ["3 Weeks", "2 Months of Placement"],
+        para: "Structured learning, mock interviews, resume refinement, and guided job support built in."
     },
     {
         icon: "hybrid-learning",
-        heading: "Live + Recorded Hybrid",
-        para: "Learn at your pace with recorded modules and join live sessions for feedback."
+        heading: "Graduate Job Ready",
+        highlights: ["Graduate Job"],
+        para: "Complete real business tasks and finish with a portfolio that proves your skills."
     },
     {
         icon: "automation-skills",
-        heading: "Automation-Ready Skills",
-        para: "Understand how AI and workflows improve execution and business performance."
+        heading: "Real Placements, Not Just Promises",
+        highlights: ["Real Placements"],
+        para: "Alumni working at NatWest, Doubtnut, PadCare, and more."
     }
 ];
+
+function renderHeading(heading: string, highlights: string[]) {
+    if (!highlights.length) return <>{heading}</>;
+    // Build a regex that matches any of the highlight phrases
+    const escaped = highlights.map(h => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    const regex = new RegExp(`(${escaped.join('|')})`, 'g');
+    const parts = heading.split(regex);
+    return (
+        <>
+            {parts.map((part, i) =>
+                highlights.includes(part)
+                    ? <span key={i} className="text-primary">{part}</span>
+                    : <span key={i}>{part}</span>
+            )}
+        </>
+    );
+}
 
 export default function WhyApex() {
     return (
@@ -56,9 +79,6 @@ export default function WhyApex() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     {features.map((feature) => {
                         const Icon = iconMap[feature.icon];
-                        const words = feature.heading.split(" ");
-                        const firstWord = words[0];
-                        const rest = words.slice(1).join(" ");
 
                         return (
                             <div
@@ -69,7 +89,7 @@ export default function WhyApex() {
                                     <Icon className="w-7 h-7 text-primary" />
                                 </div>
                                 <h3 className="text-base font-bold text-foreground mb-2">
-                                    <span className="text-primary">{firstWord}</span> {rest}
+                                    {renderHeading(feature.heading, feature.highlights)}
                                 </h3>
                                 <p className="text-sm text-muted leading-relaxed max-w-[240px]">
                                     {feature.para}
