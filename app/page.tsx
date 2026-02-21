@@ -23,12 +23,12 @@ export default function Home() {
         <Opportunity />
         <CourseBrief />
         <HiringPartners />
+        <Faculty />
         <Modules />
         <Tools />
         <Journey />
         <AfterProgram />
         <WhyApex />
-        <Faculty />
         <SocialProof />
         <FAQ />
         <FinalCTA />

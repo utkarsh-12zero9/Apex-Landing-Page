@@ -41,7 +41,7 @@ export default function Opportunity() {
             icon: <Users />,
             value: "80,000",
             suffix: " +",
-            label: "Business Careers Jobs every month",
+            label: "Business Career Jobs every month",
             color: "bg-primary/10"
         },
         {

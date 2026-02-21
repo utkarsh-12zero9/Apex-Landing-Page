@@ -80,12 +80,6 @@ body {
   -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
-/* Extra height for faculty cards on very small screens */
-@media (max-width: 330px) {
-  .faculty-card {
-    height: 540px;
-  }
-}
 
 /* Sparkle button hover animation */
 @keyframes sparkle-burst {
