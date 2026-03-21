@@ -14,7 +14,7 @@ const socialLinks = [
     { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/apexschoolof-business/' },
     { name: 'Instagram', icon: Instagram, href: '#' },
     { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Email', icon: Mail, href: 'mailto:support@apexschoolofbusiness.com' },
+    { name: 'Email', icon: Mail, href: 'mailto:business@theapexschoolofbusiness.com' },
 ];
 
 export default function Footer() {
@@ -98,14 +98,14 @@ export default function Footer() {
                                 <Phone className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                                 <div>
                                     <p className="text-sm font-medium text-white/80">Phone</p>
-                                    <a href="tel:+918049765241" className="text-sm text-white/60 hover:text-primary transition-colors">+91 8049765241</a>
+                                    <a href="tel:+917410148196" className="text-sm text-white/60 hover:text-primary transition-colors">+91 7410148196</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                                 <div>
                                     <p className="text-sm font-medium text-white/80">Email</p>
-                                    <a href="mailto:support@salesacademy.com" className="text-sm text-white/60 hover:text-primary transition-colors">support@apexschoolofbusiness.com</a>
+                                    <a href="mailto:business@theapexschoolofbusiness.com" className="text-sm text-white/60 hover:text-primary transition-colors">business@theapexschoolofbusiness.com</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">

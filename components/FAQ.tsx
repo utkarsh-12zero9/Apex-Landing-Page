@@ -6,8 +6,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const faqs = [
     {
-        q: 'What is the refund policy?',
-        a: 'We offer risk-free purchases across all courses. You can avail a full refund in 14 days of purchase, no questions asked. This is applicable across all courses and all plans.',
+        q: 'What is your fee?',
+        a: `Nothing upfront. Zero. Not a rupee. <br/><br/>
+        You pay us ₹20,000 + GST only after you land a job of 4 LPA or above, and only after your first month's salary hits your account. If you don't get placed within 3 months of completing the program, you owe us nothing.
+        <br/><br/>We do ask you to sign a simple good- faith agreement, because we're putting our time, money, and effort into your career before you pay us a single rupee. That's how much we believe in you.
+        <br/><br/>Additionally, while attending the program, some students choose to make a small "Pay as You Wish" contribution to help us cover our costs and keep this program alive for thousands of others on the same journey.Completely optional, always appreciated.`,
         icon: <Banknote className="w-5 h-5 text-primary" />
     },
     {
@@ -33,6 +36,15 @@ const faqs = [
     {
         q: 'Is there a community that I can join?',
         a: 'Yes, all students get access to an exclusive community for networking, peer-to-peer learning, and industry updates.',
+        icon: <MessageCircle className="w-5 h-5 text-primary" />
+    },
+    {
+        q: 'What if I get a job on my own after the program?',
+        a: `That's honestly a win we'd celebrate with you. 
+<br/><br/>But if our program, mentors, or resources played any part in getting you there, and you land a job within 3 months of completing the program, we humbly request you honour the agreement and pay our fee. Not just for us, but for the next person who's exactly where you were before you joined.
+<br/><br/>Your ₹20,000 keeps this dream alive for thousands of others.
+<br/><br/>And beyond that, the goodwill you build stays with you. We actively refer, recommend, and open doors for those who grow with integrity. Your career doesn't end at placement. It's just the beginning.
+`,
         icon: <MessageCircle className="w-5 h-5 text-primary" />
     },
     {
@@ -97,8 +109,7 @@ export default function FAQ() {
                                             className="overflow-hidden"
                                         >
                                             <div className="px-14 pb-6">
-                                                <p className="text-muted leading-relaxed text-base">
-                                                    {item.a}
+                                                <p className="text-muted leading-relaxed text-base" dangerouslySetInnerHTML={{ __html: item.a }}>
                                                 </p>
                                                 {item.cta && (
                                                     <button className="mt-4 bg-primary text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors shadow-sm">

@@ -240,7 +240,7 @@ export default function PrivacyPolicy() {
                         <div className="space-y-4 text-muted-foreground/90 leading-relaxed">
                             <p>If you have any questions, concerns, or wish to exercise your rights, please contact:</p>
                             <p>
-                                <strong>Email:</strong> <a href="mailto:support@yourapexdomain.com" className="text-primary hover:underline">support@yourapexdomain.com</a>
+                                <strong>Email:</strong> <a href="mailto:business@theapexschoolofbusiness.com" className="text-primary hover:underline">business@theapexschoolofbusiness.com</a>
                             </p>
                             <p>We will respond within a reasonable timeframe in accordance with applicable law.</p>
                         </div>
@@ -250,7 +250,7 @@ export default function PrivacyPolicy() {
                     <section className="mt-12 p-6 bg-muted/20 rounded-xl border border-border">
                         <h2 className="text-xl font-bold mb-2">Need Support?</h2>
                         <p className="text-muted-foreground mb-4">In case you need any support, please WhatsApp us.</p>
-                        <a href="https://wa.me/918049765241" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors">
+                        <a href="https://wa.me/917410148196" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors">
                             WhatsApp Us
                         </a>
                     </section>

@@ -14,7 +14,7 @@ const roles = [
 
 const stats = [
     { label: "Placement Support", subtext: "You don’t just learn. We actively support you in securing job interviews and cracking them.", icon: GraduationCap },
-    { label: "Hands On Execution", subtext: "Build real workflows, outreach systems, and AI powered processes during the program.", icon: Zap },
+    { label: "Success Based Fee Management", subtext: "We get paid only when you get a job, so we are investing in your career.", icon: Zap },
     { label: "15+ AI Tools", subtext: "Learn and practice with the same AI tools modern teams use every day.", icon: Blocks },
     { label: "Industry Certification", subtext: "Earn a certification that validates your practical, job-ready skills.", icon: Award },
 ];
@@ -59,7 +59,7 @@ export default function Hero() {
                     {/* Left Content - 60% width */}
                     <div className="w-full lg:w-3/5">
                         <p className="mb-4 inline-flex rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-medium text-primary">
-                            India’s First Execution Focused Business School
+                            India's First School Where You Pay After You're Hired
                         </p>
                         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
                             Get Hired in <span className="text-violet-600">Business Roles</span> at Top<span className="text-violet-600"> Software </span>and  <span className="text-violet-600">SaaS </span>Companies.

@@ -55,7 +55,7 @@ export default function Opportunity() {
         {
             icon: <IndianRupee />,
             value: "₹15 – 40 LPA",
-            label: "After 5+ years of Experience",
+            label: "Within 3-4 years",
             color: "bg-primary/10"
         }
     ];

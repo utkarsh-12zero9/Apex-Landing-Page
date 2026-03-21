@@ -21,7 +21,7 @@ export default function Support() {
                                 </div>
                                 <h3 className="text-lg font-semibold mb-2">Faster Assistance</h3>
                                 <p className="text-muted-foreground mb-4">Chat with us on WhatsApp for quick responses.</p>
-                                <a href="https://wa.me/918049765241" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium w-full mt-auto">
+                                <a href="https://wa.me/917410148196" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium w-full mt-auto">
                                     Chat on WhatsApp
                                 </a>
                             </div>
@@ -32,13 +32,13 @@ export default function Support() {
                                 </div>
                                 <h3 className="text-lg font-semibold mb-2">Formal Queries</h3>
                                 <p className="text-muted-foreground mb-4">Email us for official communication.</p>
-                                <a href="mailto:support@apexschoolofbusiness.com" className="inline-flex items-center justify-center px-4 py-2 bg-primary  rounded-lg hover:bg-primary/90 transition-colors font-medium w-full mt-auto">
+                                <a href="mailto:business@theapexschoolofbusiness.com" className="inline-flex items-center justify-center px-4 py-2 bg-primary  rounded-lg hover:bg-primary/90 transition-colors font-medium w-full mt-auto">
                                     Email Support
                                 </a>
                             </div>
                         </div>
 
-                        <p className="text-sm text-muted-foreground mt-4">For formal queries, write to: <strong>support@apexschoolofbusiness.com</strong></p>
+                        <p className="text-sm text-muted-foreground mt-4">For formal queries, write to: <strong>business@theapexschoolofbusiness.com</strong></p>
                     </section>
                 </div>
             </main>

@@ -43,7 +43,9 @@ export default function RefundPolicy() {
                     {/* Corporate Enrollments */}
                     <section className="space-y-4 text-muted-foreground/90 leading-relaxed">
                         <h2 className="text-2xl font-bold mb-4 text-foreground">Corporate Enrollments</h2>
-                        <p>Corporate training programs are non-refundable once onboarding and scheduling are confirmed.</p>
+                        <p>Corporate training programs come with a 14-day refund window from the date of onboarding. <br />
+                            If you are not satisfied with the results, you may request a refund within this period by contacting our support team.
+                        </p>
                     </section>
 
                     {/* Refund Processing Timeline */}
@@ -56,7 +58,7 @@ export default function RefundPolicy() {
                             <h3 className="text-lg font-bold text-foreground mb-2">Need Support?</h3>
                             <p className="text-muted-foreground mb-4">In case you need any support, please WhatsApp us.</p>
                             <a
-                                href="https://wa.me/918049765241"
+                                href="https://wa.me/917410148196"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors"

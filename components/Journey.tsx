@@ -2,12 +2,27 @@
 
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Flag, Rocket, Users, FileText, Zap } from 'lucide-react';
+import { Airplay, Flag, Rocket, Users, FileText, Zap } from 'lucide-react';
 
 const journeyData = [
     {
+        sectionTag: "Before you begin",
+        title: "Screening & Selection",
+        description: [
+            "Submit your resume for an initial profile review",
+            "Attend a short 15-minute interview with our team",
+            "We assess your intent, goals, and readiness to commit",
+            "Only serious candidates ready to put in the work are selected"
+        ],
+        timeline: "Day 0",
+        phase: "Screening",
+        icon: Airplay,
+        color: "bg-[#fce5cd]", // Pastel Yellow
+        borderColor: "border-[#fce5cd]"
+    },
+    {
         sectionTag: "Start of Program",
-        title: "Onboarding and Orientation",
+        title: "Onboarding & Orientation",
         description: [
             "Get access to your learning modules and tools",
             "Understand the complete roadmap, assignments, and expectations",
