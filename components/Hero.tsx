@@ -64,9 +64,6 @@ export default function Hero() {
                         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
                             Get Hired in <span className="text-violet-600">Business Roles</span> at Top<span className="text-violet-600"> Software </span>and  <span className="text-violet-600">SaaS </span>Companies.
                         </h1>
-                        {/* <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-45xl text-black">
-                            Get Hired in <span className="text-violet-600">Business Roles</span> in <span className="text-violet-600">AI-Driven</span> World.
-                        </h1> */}
 
                         <p className="mt-4 max-w-3xl text-base text-muted sm:text-lg">
                             A <span className="text-black font-bold bg-violet-200 px-2 md:py-1 rounded-xl">3-week program</span>  taught by IIT and ISB alumni that trains you on the exact AI tools, outreach systems, and execution skills companies are actively hiring for, with placement support until you land the role. <br />
@@ -77,7 +74,8 @@ export default function Hero() {
 
                         <div className="mt-8 flex flex-col min-[420px]:flex-row gap-2">
                             <SparkleButton
-                                href="#final-cta"
+                                href="/form"
+                                target="_blank"
                                 className="rounded-xl bg-primary px-12 py-3 text-center font-semibold text-white shadow-md hover:shadow-lg transform transition duration-200 ease-out hover:scale-102 focus:outline-none focus:ring-4 focus:ring-primary/30 active:translate-y-1"
                             >
                                 Enroll Now

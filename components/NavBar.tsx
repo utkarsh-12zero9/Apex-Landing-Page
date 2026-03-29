@@ -61,7 +61,7 @@ export default function NavBar() {
                 {/* Right CTA (Desktop) */}
                 <div className="hidden md:flex items-center gap-3">
                     <a
-                        href="/#final-cta"
+                        href="/form" target="_blank" rel="noopener noreferrer"
                         className="rounded-xl bg-primary px-5 py-2 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300"
                     >
                         Join Now
@@ -99,7 +99,7 @@ export default function NavBar() {
                             ))}
                             <hr className="border-black/5 my-1" />
                             <a
-                                href="/#final-cta"
+                                href="/form" target="_blank" rel="noopener noreferrer"
                                 onClick={() => setIsOpen(false)}
                                 className="w-full text-center rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-300"
                             >

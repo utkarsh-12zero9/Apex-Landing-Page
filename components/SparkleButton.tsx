@@ -40,10 +40,12 @@ export default function SparkleButton({
     children,
     href,
     className,
+    target,
 }: {
     children: React.ReactNode;
     href: string;
-    className: string;
+    className?: string;
+    target?: string;
 }) {
     const containerRef = useRef<HTMLDivElement>(null);
     const sparkleContainerRef = useRef<HTMLDivElement>(null);
@@ -133,7 +135,7 @@ export default function SparkleButton({
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <a href={href} className={`${className} inline-block w-full sm:w-auto`}>
+            <a href={href} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined} className={`${className || ''} inline-block w-full sm:w-auto`}>
                 {children}
             </a>
             <div

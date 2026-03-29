@@ -19,7 +19,8 @@ export default function FinalCTA() {
                 </div>
 
                 <SparkleButton
-                    href="#hero"
+                    href="/form"
+                    target="_blank"
                     className="mt-10 text-xl rounded-2xl bg-primary px-18 py-3 font-semibold text-white transition hover:bg-primary/90"
                 >
                     Enroll Now

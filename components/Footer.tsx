@@ -80,7 +80,7 @@ export default function Footer() {
                             Ready to launch your career in the AI-driven business world?
                         </p>
                         <a
-                            href="/#final-cta"
+                            href="/form" target="_blank" rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300"
                         >
                             Enroll Now
