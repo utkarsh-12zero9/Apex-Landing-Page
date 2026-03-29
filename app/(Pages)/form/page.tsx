@@ -51,52 +51,52 @@ export default function PreviewFormPage() {
     }
   };
 
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbweYLCSr6u-ByaSQXDpbY9-hbGxa04hpF_mR0-T734A7vis2M5ARBfASofDSybCmp9m/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwE_DoAQj6euYMjOQl-uDNOfjExb7ewFJ4XzfryooOo_wxb8W9xAOIo1IJ9-NCWiUrKRQ/exec";
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // Convert file to base64 Data URL so it can be sent via POST request 
-      // (Google Apps script will either store this base64 string or decode it into a Drive file)
       let base64Resume = "";
       if (resumeFile) {
-        base64Resume = await new Promise<string>((resolve) => {
+        base64Resume = await new Promise<string>((resolve, reject) => {
           const reader = new FileReader();
           reader.onloadend = () => {
-            resolve(reader.result as string);
+            const result = reader.result as string;
+            const base64 = result.split("base64,")[1] || "";
+            resolve(base64);
           };
+          reader.onerror = reject;
           reader.readAsDataURL(resumeFile);
         });
       }
 
-      // Using safe camelCase keys for the POST payload
-      const payload = new URLSearchParams();
-      payload.append("fullName", form.fullName);
-      payload.append("emailId", form.workEmail);
-      payload.append("phoneNumber", form.phone);
-      payload.append("linkedinUrl", form.linkedin);
-      payload.append("resumeData", base64Resume);
-      payload.append("loomLink", form.loomLink);
+      const payload = {
+        fullName: form.fullName,
+        emailId: form.workEmail,
+        phoneNumber: form.phone,
+        linkedinUrl: form.linkedin,
+        loomLink: form.loomLink,
+        resumeData: base64Resume, 
+        resumeName: resumeFile ? resumeFile.name : ""
+      };
 
       const response = await fetch(SCRIPT_URL, {
         method: "POST",
+        mode: "no-cors",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "text/plain;charset=utf-8",
         },
-        body: payload.toString(),
+        body: JSON.stringify(payload),
       });
 
-      const data = await response.json();
+      // Because we placed this directly inside the browser component again,
+      // Google's strict CORS rules legally bind us from reading its "Success" output JSON.
+      // We must blindly trust the opaque execution and immediately push you through to checkout.
+      window.location.href = CHECKOUT_URL;
 
-      if (data.success) {
-        window.location.href = CHECKOUT_URL;
-      } else {
-        setError("Submission failed. Please try again.");
-      }
-
-    } catch (err) {
-      setError("Network error. Please try again.");
+    } catch (err: any) {
+      setError("Network drop blocked submission to Google. Details: " + (err.message || err.toString()));
     } finally {
       setIsSubmitting(false);
     }
