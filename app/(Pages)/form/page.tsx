@@ -118,7 +118,7 @@ export default function PreviewFormPage() {
             <form className="preview-form" onSubmit={handleSubmit}>
               <div className="preview-form-grid">
                 <div className="preview-form-field">
-                  <label className="preview-form-label" htmlFor="pf-fullName">Full Name</label>
+                  <label className="preview-form-label" htmlFor="pf-fullName">Full Name <span className="required-asterisk">*</span></label>
                   <input
                     id="pf-fullName"
                     className="preview-form-input"
@@ -134,7 +134,7 @@ export default function PreviewFormPage() {
                 </div>
 
                 <div className="preview-form-field">
-                  <label className="preview-form-label" htmlFor="pf-workEmail">Email ID</label>
+                  <label className="preview-form-label" htmlFor="pf-workEmail">Email ID <span className="required-asterisk">*</span></label>
                   <input
                     id="pf-workEmail"
                     className="preview-form-input"
@@ -150,7 +150,7 @@ export default function PreviewFormPage() {
                 </div>
 
                 <div className="preview-form-field">
-                  <label className="preview-form-label" htmlFor="pf-phone">Phone Number</label>
+                  <label className="preview-form-label" htmlFor="pf-phone">Phone Number <span className="required-asterisk">*</span></label>
                   <input
                     id="pf-phone"
                     className="preview-form-input"
@@ -166,7 +166,7 @@ export default function PreviewFormPage() {
                 </div>
 
                 <div className="preview-form-field">
-                  <label className="preview-form-label" htmlFor="pf-linkedin">LinkedIn Profile URL</label>
+                  <label className="preview-form-label" htmlFor="pf-linkedin">LinkedIn Profile URL <span className="required-asterisk">*</span></label>
                   <input
                     id="pf-linkedin"
                     className="preview-form-input"
@@ -180,7 +180,7 @@ export default function PreviewFormPage() {
                 </div>
 
                 <div className="preview-form-field full-width">
-                  <label className="preview-form-label" htmlFor="pf-resume">Upload Resume</label>
+                  <label className="preview-form-label" htmlFor="pf-resume">Upload Resume <span className="required-asterisk">*</span></label>
                   <div className="file-upload-wrapper">
                     <input
                       id="pf-resume"
@@ -203,7 +203,7 @@ export default function PreviewFormPage() {
                 </div>
 
                 <div className="preview-form-field full-width">
-                  <label className="preview-form-label" htmlFor="pf-loomLink">1-Minute Video Submission (Loom Link)</label>
+                  <label className="preview-form-label" htmlFor="pf-loomLink">1-Minute Video Submission (Loom Link) <span className="required-asterisk">*</span></label>
                   <input
                     id="pf-loomLink"
                     className="preview-form-input"
