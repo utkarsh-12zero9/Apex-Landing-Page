@@ -42,8 +42,7 @@ const faqs = [
         q: 'What if I get a job on my own after the program?',
         a: `That's honestly a win we'd celebrate with you. 
 <br/><br/>But if our program, mentors, or resources played any part in getting you there, and you land a job within 3 months of completing the program, we humbly request you honour the agreement and pay our fee. Not just for us, but for the next person who's exactly where you were before you joined.
-<br/><br/>Your ₹20,000 keeps this dream alive for thousands of others.
-<br/><br/>And beyond that, the goodwill you build stays with you. We actively refer, recommend, and open doors for those who grow with integrity. Your career doesn't end at placement. It's just the beginning.
+<br/><br/>The goodwill you build stays with you. We actively refer, recommend, and open doors for those who grow with integrity. Your career doesn't end at placement. It's just the beginning.
 `,
         icon: <MessageCircle className="w-5 h-5 text-primary" />
     },

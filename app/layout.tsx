@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   keywords: [
     "Apex School of Business",
     "Top B-School",
-    "PGDM Course",
     "Management Studies",
     "Business Administration",
     "Corporate Training",

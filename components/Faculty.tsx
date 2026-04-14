@@ -5,6 +5,7 @@ import feature_1 from "../public/feature_1.jpg"
 import feature_2 from "../public/feature_2.jpg"
 import feature_3 from "../public/feature_3.jpg"
 import feature_4 from "../public/feature_4.jpg"
+import feature_5 from "../public/feature_5.png"
 import linkedin from "../public/linkedin.webp"
 import FadeInSection from "./FadeInSection"
 import youtube from "../public/YouTube.png"
@@ -55,8 +56,11 @@ const featuredIn = [
         image: feature_4,
         link: "https://yourstory.com/2021/09/funding-alert-deeptech-startup-trillbit-raises-funds"
     },
+    {
+        image: feature_5,
+        link: "https://www.ptinews.com/press-release/pay-after-you-get-hired-apex-school-of-business-launches-indias-most-audacious-career-program-for-job-seekers-backed-by-iit-and-isb-alumni/3550256"
+    },
 ]
-
 
 function FacultyCard({ person }: { person: typeof faculty[0] }) {
     const [expanded, setExpanded] = useState(false);
