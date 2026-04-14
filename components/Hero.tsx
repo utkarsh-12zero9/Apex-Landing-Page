@@ -66,7 +66,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="mt-4 max-w-3xl text-base text-muted sm:text-lg">
-                            A <span className="text-black font-bold bg-violet-200 px-2 md:py-1 rounded-xl">3-week program</span>  taught by IIT and ISB alumni that trains you on the exact AI tools, outreach systems, and execution skills companies are actively hiring for, with placement support until you land the role. <br />
+                            A <span className="text-black font-bold bg-violet-200 px-2 md:py-1 rounded-xl">12-hour program</span>  taught by IIT and ISB alumni that trains you on the exact AI tools, outreach systems, and execution skills companies are actively hiring for, with placement support until you land the role. <br />
                             <span className="text-black text-2xl font-semibold">Build a Career in Business roles such as </span><span className="text-violet-600 text-2xl font-semibold bg-violet-100 px-2 md:py-1 border-r-4">{text}.</span><span className="animate-pulse"></span>
                         </p>
 

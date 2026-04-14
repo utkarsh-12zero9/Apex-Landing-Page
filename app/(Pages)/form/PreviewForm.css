@@ -307,6 +307,24 @@
   transform: translateY(-1px);
 }
 
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.preview-form-helper {
+  font-size: 13px;
+  color: #6b7280; /* soft gray */
+  margin-top: 6px;
+}
+
 @keyframes modalFadeIn {
   from {
     opacity: 0;

@@ -7,9 +7,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 const faqs = [
     {
         q: 'What is your fee?',
-        a: `You don’t pay anything upfront. <br/><br/>
-        Companies work with us to hire job-ready candidates.<br/>
-        We train you first, then connect you with them.`,
+        a: `Nothing upfront. Zero. Not a rupee. <br/><br/>
+        For the first 20 candidates only, we are not charging anything. <br/><br/>
+        You pay us ₹20,000 + GST only after you land a job of 4 LPA or above, and only after your first month's salary hits your account. If you don't get placed within 3 months of completing the program, you owe us nothing.<br/><br/>        
+        We do ask you to sign a simple good-faith agreement, because we're putting our time, money, and effort into your career before you pay us a single rupee. That's how much we believe in you.<br/><br/>
+        Additionally, while attending the program, some students choose to make a small "Pay as You Wish" contribution to help us cover our costs and keep this program alive for thousands of others on the same journey. Completely optional, always appreciated.`,
         icon: <Banknote className="w-5 h-5 text-primary" />
     },
     {

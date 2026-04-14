@@ -14,6 +14,7 @@ interface FormData {
   workEmail: string;
   phone: string;
   linkedin: string;
+  hasLaptop: string;
   loomLink: string;
 }
 
@@ -22,6 +23,7 @@ const initialForm: FormData = {
   workEmail: "",
   phone: "",
   linkedin: "",
+  hasLaptop: "",
   loomLink: "",
 };
 
@@ -51,7 +53,8 @@ export default function PreviewFormPage() {
     }
   };
 
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwE_DoAQj6euYMjOQl-uDNOfjExb7ewFJ4XzfryooOo_wxb8W9xAOIo1IJ9-NCWiUrKRQ/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzb9-hvQ86sK_KtBmAJ1To9DcozuEDurkccL2q8_oAuGrxDj5TWJVHyH3wNcDB0CX7H/exec";
+  // const SCRIPT_URL_2 = "https://script.google.com/macros/s/AKfycbwE_DoAQj6euYMjOQl-uDNOfjExb7ewFJ4XzfryooOo_wxb8W9xAOIo1IJ9-NCWiUrKRQ/exec";
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -76,8 +79,9 @@ export default function PreviewFormPage() {
         emailId: form.workEmail,
         phoneNumber: form.phone,
         linkedinUrl: form.linkedin,
+        hasLaptop: form.hasLaptop,
         loomLink: form.loomLink,
-        resumeData: base64Resume, 
+        resumeData: base64Resume,
         resumeName: resumeFile ? resumeFile.name : ""
       };
 
@@ -89,6 +93,15 @@ export default function PreviewFormPage() {
         },
         body: JSON.stringify(payload),
       });
+
+      // const response_2 = await fetch(SCRIPT_URL_2, {
+      //   method: "POST",
+      //   mode: "no-cors",
+      //   headers: {
+      //     "Content-Type": "text/plain;charset=utf-8",
+      //   },
+      //   body: JSON.stringify(payload),
+      // });
 
       // Because we placed this directly inside the browser component again,
       // Google's strict CORS rules legally bind us from reading its "Success" output JSON.
@@ -209,21 +222,59 @@ export default function PreviewFormPage() {
                     className="preview-form-input"
                     type="url"
                     name="loomLink"
-                    placeholder="Paste your Loom video link"
+                    placeholder="Paste your Loom video link here"
                     value={form.loomLink}
                     onChange={handleChange}
                     required
                   />
                   <div className="preview-form-instructions loom-instructions">
-                    <p className="loom-instructions-title">Record a 1-minute video explaining:</p>
+                    <p className="loom-instructions-title">Record a 1-minute video on <a href="https://www.loom.com/" className="text-blue-600 hover:text-blue-800 underline">Loom</a> explaining:</p>
                     <ul className="loom-instructions-list">
                       <li>Your background</li>
                       <li>Why you want to join this program</li>
-                      <li>Your interest in sales/marketing</li>
+                      <li>Your interest in business / sales / marketing</li>
                     </ul>
                     <p className="loom-instructions-footer">Upload it on Loom and paste the link above.</p>
                   </div>
                 </div>
+
+                <div className="preview-form-field full-width">
+                  <label className="preview-form-label">
+                    Do you have a Laptop? <span className="required-asterisk">*</span>
+                  </label>
+
+                  <div className="radio-group">
+                    <label className="radio-option">
+                      <input
+                        type="radio"
+                        name="hasLaptop"
+                        value="Yes"
+                        checked={form.hasLaptop === "Yes"}
+                        onChange={handleChange}
+                        required
+                      />
+                      Yes
+                    </label>
+
+                    <label className="radio-option">
+                      <input
+                        type="radio"
+                        name="hasLaptop"
+                        value="No"
+                        checked={form.hasLaptop === "No"}
+                        onChange={handleChange}
+                        required
+                      />
+                      No
+                    </label>
+                  </div>
+
+                  {/* Helper Text */}
+                  <p className="preview-form-helper">
+                    A laptop is required to complete assignments and participate in the program.
+                  </p>
+                </div>
+
               </div>
 
               <p className="preview-form-disclaimer">

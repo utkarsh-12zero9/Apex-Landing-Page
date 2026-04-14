@@ -6,6 +6,7 @@ import feature_2 from "../public/feature_2.jpg"
 import feature_3 from "../public/feature_3.jpg"
 import feature_4 from "../public/feature_4.jpg"
 import feature_5 from "../public/feature_5.png"
+import feature_6 from "../public/feature_6.png"
 import linkedin from "../public/linkedin.webp"
 import FadeInSection from "./FadeInSection"
 import youtube from "../public/YouTube.png"
@@ -36,7 +37,14 @@ const faculty = [
         credential: `Ian has consulted 20+ companies across India and the US on sales growth, and built a 6-figure dollar income independently through Upwork. He knows what it takes to sell, what clients actually look for, and how to position yourself to win in a competitive market. He teaches from real deals, not textbooks.`,
         image: "/ian_jason_creado.jpg",
         linkedin: "https://www.linkedin.com/in/ian-jason-creado-365a3119b/"
-    }
+    },
+    {
+        name: "Gurpreet Walia",
+        subheading: "20+ Years Experience | MBA, ISB Hyderabad",
+        credential: `With over 20 years of experience, Gurpreet has worked across corporate development, strategic partnerships, and business growth roles in leading organizations.He has led high-impact initiatives across tech, media, telecom, eCommerce, and EdTech, working closely with CXOs and leadership teams. His experience includes driving large partnerships, managing end-to-end deal execution, and building growth strategies for both Fortune 500 companies and fast-growing startups.At Apex, he brings a practical understanding of how businesses actually grow, focusing on real-world execution, decision-making, and strategic thinking required in modern business roles.`,
+        image: "/Gurpreet.jpg",
+        linkedin: "https://www.linkedin.com/in/gurpreet-walia/"
+    },
 ];
 
 const featuredIn = [
@@ -60,7 +68,11 @@ const featuredIn = [
         image: feature_5,
         link: "https://www.ptinews.com/press-release/pay-after-you-get-hired-apex-school-of-business-launches-indias-most-audacious-career-program-for-job-seekers-backed-by-iit-and-isb-alumni/3550256"
     },
-]
+    {
+        image: feature_6,
+        link: "https://www.devdiscourse.com/article/education/3869292-apex-school-of-business-revolutionizing-career-training-with-a-no-pay-until-placement-model"
+    },
+];
 
 function FacultyCard({ person }: { person: typeof faculty[0] }) {
     const [expanded, setExpanded] = useState(false);
@@ -68,8 +80,8 @@ function FacultyCard({ person }: { person: typeof faculty[0] }) {
 
     return (
         <article className="faculty-card bg-card rounded-2xl border border-primary/20 shadow-sm hover:shadow-lg hover:scale-101 transition-all duration-300 flex flex-col">
-            <div className="overflow-hidden rounded-t-2xl flex-shrink-0">
-                <img src={person.image} alt={person.name} className="h-64 lg:h-80 w-full object-cover object-top transition-all duration-300" loading="lazy" />
+            <div className="overflow-hidden rounded-t-2xl shrink-0">
+                <img src={person.image} alt={person.name} className="h-96 lg:h-116 w-full object-cover object-top transition-all duration-300" loading="lazy" />
             </div>
             <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-lg font-semibold text-foreground">{person.name}</h3>
@@ -114,7 +126,7 @@ export default function Faculty() {
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground text-center">
                     Our Faculties from <span className="text-primary">IIT, ISB, ICAI</span>
                 </h2>
-                <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2">
                     {faculty.map((person) => (
                         <FacultyCard key={person.name} person={person} />
                     ))}
