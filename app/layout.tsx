@@ -15,9 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Apex School of Business",
   description: "Launch your career with Apex School of Business - Top B-School. Expert faculty, industry exposure, and 100% placement assistance.",
-  icons: {
-    icon: "/logo.png",
-  },
+
   keywords: [
     "Apex School of Business",
     "Top B-School",

@@ -93,7 +93,7 @@ export default function Hero() {
                     <div className="w-full lg:w-2/5 flex flex-col items-center justify-center">
                         <div className="w-full h-full aspect-video rounded-2xl overflow-hidden shadow-2xl mx-auto">
                             <iframe
-                                src="https://youtu.be/AIrXXWRnOG0"
+                                src="https://www.youtube.com/embed/AIrXXWRnOG0?si=PBjU61hgeYQRgLlI/AIrXXWRnOG0"
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

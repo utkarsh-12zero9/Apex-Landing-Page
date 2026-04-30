@@ -54,7 +54,7 @@ export default function PreviewFormPage() {
   };
 
   const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzb9-hvQ86sK_KtBmAJ1To9DcozuEDurkccL2q8_oAuGrxDj5TWJVHyH3wNcDB0CX7H/exec";
-  // const SCRIPT_URL_2 = "https://script.google.com/macros/s/AKfycbwE_DoAQj6euYMjOQl-uDNOfjExb7ewFJ4XzfryooOo_wxb8W9xAOIo1IJ9-NCWiUrKRQ/exec";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -93,15 +93,6 @@ export default function PreviewFormPage() {
         },
         body: JSON.stringify(payload),
       });
-
-      // const response_2 = await fetch(SCRIPT_URL_2, {
-      //   method: "POST",
-      //   mode: "no-cors",
-      //   headers: {
-      //     "Content-Type": "text/plain;charset=utf-8",
-      //   },
-      //   body: JSON.stringify(payload),
-      // });
 
       // Because we placed this directly inside the browser component again,
       // Google's strict CORS rules legally bind us from reading its "Success" output JSON.
